@@ -1,0 +1,1618 @@
+{
+    "updated_at": "2026-04-20 13:31:49",
+    "traces": {
+        "bdbb63fa46": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:29:56",
+            "updated_at": "2026-04-20 12:29:56",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-122954-b133b4f0",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4794.77",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4794.77 USD\/T.oz\nPrevPrice: 4794.77\nChange: 0 (0%)\nTimestamp: 1776677394\nTime: 2026-04-20 12:29:54",
+                "created_at": "2026-04-20 12:29:56"
+            }
+        },
+        "4ecec00546": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:30:02",
+            "updated_at": "2026-04-20 12:30:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-123001-6f150e32",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4793.14",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4793.14 USD\/T.oz\nPrevPrice: 4794.77\nChange: -1.6300000000001 (-0.033995374126394%)\nTimestamp: 1776677401\nTime: 2026-04-20 12:30:01",
+                "created_at": "2026-04-20 12:30:02"
+            }
+        },
+        "ea25653c49": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:31:02",
+            "updated_at": "2026-04-20 12:31:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-123101-87834c1e",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4793.14",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4793.14 USD\/T.oz\nPrevPrice: 4793.14\nChange: 0 (0%)\nTimestamp: 1776677461\nTime: 2026-04-20 12:31:01",
+                "created_at": "2026-04-20 12:31:02"
+            }
+        },
+        "ddf2279674": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:32:02",
+            "updated_at": "2026-04-20 12:32:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-123201-c99c1d2c",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4793.14",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4793.14 USD\/T.oz\nPrevPrice: 4793.14\nChange: 0 (0%)\nTimestamp: 1776677521\nTime: 2026-04-20 12:32:01",
+                "created_at": "2026-04-20 12:32:02"
+            }
+        },
+        "b65b73e742": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:33:02",
+            "updated_at": "2026-04-20 12:33:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-123301-f01e30a7",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4793.14",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4793.14 USD\/T.oz\nPrevPrice: 4793.14\nChange: 0 (0%)\nTimestamp: 1776677582\nTime: 2026-04-20 12:33:02",
+                "created_at": "2026-04-20 12:33:02"
+            }
+        },
+        "fa6ef506c3": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:34:02",
+            "updated_at": "2026-04-20 12:34:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-123401-04d5382b",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4793.14",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4793.14 USD\/T.oz\nPrevPrice: 4793.14\nChange: 0 (0%)\nTimestamp: 1776677641\nTime: 2026-04-20 12:34:01",
+                "created_at": "2026-04-20 12:34:02"
+            }
+        },
+        "c0292270bd": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:35:01",
+            "updated_at": "2026-04-20 12:35:01",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-123501-034fe057",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4793.14",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4793.14 USD\/T.oz\nPrevPrice: 4793.14\nChange: 0 (0%)\nTimestamp: 1776677701\nTime: 2026-04-20 12:35:01",
+                "created_at": "2026-04-20 12:35:01"
+            }
+        },
+        "789ab4c96d": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:36:02",
+            "updated_at": "2026-04-20 12:36:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-123601-bc8f106d",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4793.14",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4793.14 USD\/T.oz\nPrevPrice: 4793.14\nChange: 0 (0%)\nTimestamp: 1776677761\nTime: 2026-04-20 12:36:01",
+                "created_at": "2026-04-20 12:36:02"
+            }
+        },
+        "7fd700d5d1": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:37:02",
+            "updated_at": "2026-04-20 12:37:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-123702-ab5114e6",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4793.14",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4793.14 USD\/T.oz\nPrevPrice: 4793.14\nChange: 0 (0%)\nTimestamp: 1776677822\nTime: 2026-04-20 12:37:02",
+                "created_at": "2026-04-20 12:37:02"
+            }
+        },
+        "7c2e7d30b0": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:38:02",
+            "updated_at": "2026-04-20 12:38:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-123801-fff9ab1a",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4793.14",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4793.14 USD\/T.oz\nPrevPrice: 4793.14\nChange: 0 (0%)\nTimestamp: 1776677881\nTime: 2026-04-20 12:38:01",
+                "created_at": "2026-04-20 12:38:02"
+            }
+        },
+        "df7e58c706": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:39:02",
+            "updated_at": "2026-04-20 12:39:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-123901-f4d4660d",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4793.14",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4793.14 USD\/T.oz\nPrevPrice: 4793.14\nChange: 0 (0%)\nTimestamp: 1776677941\nTime: 2026-04-20 12:39:01",
+                "created_at": "2026-04-20 12:39:02"
+            }
+        },
+        "bee346bdb1": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:40:02",
+            "updated_at": "2026-04-20 12:40:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-124001-42c7ba85",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4788.4",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4788.4 USD\/T.oz\nPrevPrice: 4793.14\nChange: -4.7400000000007 (-0.098891332195611%)\nTimestamp: 1776678001\nTime: 2026-04-20 12:40:01",
+                "created_at": "2026-04-20 12:40:02"
+            }
+        },
+        "3e79e1471f": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:41:03",
+            "updated_at": "2026-04-20 12:41:03",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-124102-b4bbe3e6",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4788.4",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4788.4 USD\/T.oz\nPrevPrice: 4788.4\nChange: 0 (0%)\nTimestamp: 1776678062\nTime: 2026-04-20 12:41:02",
+                "created_at": "2026-04-20 12:41:03"
+            }
+        },
+        "371a9ffc6f": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:42:08",
+            "updated_at": "2026-04-20 12:42:08",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-124207-f8045caf",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4788.4",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4788.4 USD\/T.oz\nPrevPrice: 4788.4\nChange: 0 (0%)\nTimestamp: 1776678127\nTime: 2026-04-20 12:42:07",
+                "created_at": "2026-04-20 12:42:08"
+            }
+        },
+        "54cf2e9d68": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:43:02",
+            "updated_at": "2026-04-20 12:43:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-124301-c0e5eec3",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4788.4",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4788.4 USD\/T.oz\nPrevPrice: 4788.4\nChange: 0 (0%)\nTimestamp: 1776678181\nTime: 2026-04-20 12:43:01",
+                "created_at": "2026-04-20 12:43:02"
+            }
+        },
+        "cc0e54089a": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:44:07",
+            "updated_at": "2026-04-20 12:44:07",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-124401-90322bc3",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4788.4",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4788.4 USD\/T.oz\nPrevPrice: 4788.4\nChange: 0 (0%)\nTimestamp: 1776678241\nTime: 2026-04-20 12:44:01",
+                "created_at": "2026-04-20 12:44:07"
+            }
+        },
+        "470ef04817": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:45:02",
+            "updated_at": "2026-04-20 12:45:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-124502-425637c8",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4788.4",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4788.4 USD\/T.oz\nPrevPrice: 4788.4\nChange: 0 (0%)\nTimestamp: 1776678302\nTime: 2026-04-20 12:45:02",
+                "created_at": "2026-04-20 12:45:02"
+            }
+        },
+        "cd7dc0d9c8": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:46:02",
+            "updated_at": "2026-04-20 12:46:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-124601-2f03f581",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4788.4",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4788.4 USD\/T.oz\nPrevPrice: 4788.4\nChange: 0 (0%)\nTimestamp: 1776678361\nTime: 2026-04-20 12:46:01",
+                "created_at": "2026-04-20 12:46:02"
+            }
+        },
+        "e628bc3128": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:47:02",
+            "updated_at": "2026-04-20 12:47:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-124701-5aa55e88",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4788.4",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4788.4 USD\/T.oz\nPrevPrice: 4788.4\nChange: 0 (0%)\nTimestamp: 1776678421\nTime: 2026-04-20 12:47:01",
+                "created_at": "2026-04-20 12:47:02"
+            }
+        },
+        "6f4738c863": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:48:02",
+            "updated_at": "2026-04-20 12:48:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-124801-90cbee8a",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4788.4",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4788.4 USD\/T.oz\nPrevPrice: 4788.4\nChange: 0 (0%)\nTimestamp: 1776678481\nTime: 2026-04-20 12:48:01",
+                "created_at": "2026-04-20 12:48:02"
+            }
+        },
+        "85791dd9cc": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:49:07",
+            "updated_at": "2026-04-20 12:49:07",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-124902-eb65b7a4",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4788.4",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4788.4 USD\/T.oz\nPrevPrice: 4788.4\nChange: 0 (0%)\nTimestamp: 1776678542\nTime: 2026-04-20 12:49:02",
+                "created_at": "2026-04-20 12:49:07"
+            }
+        },
+        "91b5407ed6": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:50:02",
+            "updated_at": "2026-04-20 12:50:25",
+            "stats": {
+                "up": 1,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 1,
+                "stats": 1,
+                "help": 1,
+                "clicks": 4
+            },
+            "users": {
+                "1642876109": {
+                    "vote": "up",
+                    "updated_at": "2026-04-20 12:50:09",
+                    "username": "Mr_Erik_o"
+                }
+            },
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-125001-05589e8e",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4795.59",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4795.59 USD\/T.oz\nPrevPrice: 4788.4\nChange: 7.1900000000005 (0.15015454013868%)\nTimestamp: 1776678601\nTime: 2026-04-20 12:50:01",
+                "created_at": "2026-04-20 12:50:02"
+            },
+            "chat_id": "-1003726302456",
+            "message_id": "260"
+        },
+        "bb5667aebd": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:51:02",
+            "updated_at": "2026-04-20 12:51:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-125101-3f1ef633",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4795.59",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4795.59 USD\/T.oz\nPrevPrice: 4795.59\nChange: 0 (0%)\nTimestamp: 1776678662\nTime: 2026-04-20 12:51:02",
+                "created_at": "2026-04-20 12:51:02"
+            }
+        },
+        "18fd84f3eb": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:52:07",
+            "updated_at": "2026-04-20 12:52:07",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-125201-5d32fc78",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4795.59",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4795.59 USD\/T.oz\nPrevPrice: 4795.59\nChange: 0 (0%)\nTimestamp: 1776678721\nTime: 2026-04-20 12:52:01",
+                "created_at": "2026-04-20 12:52:07"
+            }
+        },
+        "360be63bc2": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:53:02",
+            "updated_at": "2026-04-20 12:53:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-125301-2e6f4b23",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4795.59",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4795.59 USD\/T.oz\nPrevPrice: 4795.59\nChange: 0 (0%)\nTimestamp: 1776678781\nTime: 2026-04-20 12:53:01",
+                "created_at": "2026-04-20 12:53:02"
+            }
+        },
+        "6b4894813e": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:54:02",
+            "updated_at": "2026-04-20 12:54:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-125401-8325d3fd",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4795.59",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4795.59 USD\/T.oz\nPrevPrice: 4795.59\nChange: 0 (0%)\nTimestamp: 1776678842\nTime: 2026-04-20 12:54:02",
+                "created_at": "2026-04-20 12:54:02"
+            }
+        },
+        "a34f478570": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:55:03",
+            "updated_at": "2026-04-20 12:55:03",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-125502-f484e01d",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4795.59",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4795.59 USD\/T.oz\nPrevPrice: 4795.59\nChange: 0 (0%)\nTimestamp: 1776678902\nTime: 2026-04-20 12:55:02",
+                "created_at": "2026-04-20 12:55:03"
+            }
+        },
+        "286381f968": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:56:02",
+            "updated_at": "2026-04-20 12:56:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-125601-0df90fc4",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4795.59",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4795.59 USD\/T.oz\nPrevPrice: 4795.59\nChange: 0 (0%)\nTimestamp: 1776678961\nTime: 2026-04-20 12:56:01",
+                "created_at": "2026-04-20 12:56:02"
+            }
+        },
+        "ad36673568": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:57:02",
+            "updated_at": "2026-04-20 12:57:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-125701-ddeaf83a",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4795.59",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4795.59 USD\/T.oz\nPrevPrice: 4795.59\nChange: 0 (0%)\nTimestamp: 1776679021\nTime: 2026-04-20 12:57:01",
+                "created_at": "2026-04-20 12:57:02"
+            }
+        },
+        "64c49407d5": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:58:02",
+            "updated_at": "2026-04-20 12:58:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-125801-21dbb11a",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4795.59",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4795.59 USD\/T.oz\nPrevPrice: 4795.59\nChange: 0 (0%)\nTimestamp: 1776679081\nTime: 2026-04-20 12:58:01",
+                "created_at": "2026-04-20 12:58:02"
+            }
+        },
+        "49eeb82056": {
+            "scope": "test",
+            "created_at": "2026-04-20 12:59:02",
+            "updated_at": "2026-04-20 12:59:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-125901-a2858628",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4795.59",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4795.59 USD\/T.oz\nPrevPrice: 4795.59\nChange: 0 (0%)\nTimestamp: 1776679142\nTime: 2026-04-20 12:59:02",
+                "created_at": "2026-04-20 12:59:02"
+            }
+        },
+        "17bdf2cf00": {
+            "scope": "test",
+            "created_at": "2026-04-20 13:00:08",
+            "updated_at": "2026-04-20 13:00:08",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-130001-17a2d5cb",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4791.96",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4791.96 USD\/T.oz\nPrevPrice: 4795.59\nChange: -3.6300000000001 (-0.075694544362635%)\nTimestamp: 1776679202\nTime: 2026-04-20 13:00:02",
+                "created_at": "2026-04-20 13:00:08"
+            }
+        },
+        "4c9aead82f": {
+            "scope": "test",
+            "created_at": "2026-04-20 13:01:02",
+            "updated_at": "2026-04-20 13:01:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-130101-7c2ef52c",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4791.96",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4791.96 USD\/T.oz\nPrevPrice: 4791.96\nChange: 0 (0%)\nTimestamp: 1776679262\nTime: 2026-04-20 13:01:02",
+                "created_at": "2026-04-20 13:01:02"
+            }
+        },
+        "414a5ca4a3": {
+            "scope": "test",
+            "created_at": "2026-04-20 13:02:07",
+            "updated_at": "2026-04-20 13:02:07",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-130201-e9b06409",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4791.96",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4791.96 USD\/T.oz\nPrevPrice: 4791.96\nChange: 0 (0%)\nTimestamp: 1776679322\nTime: 2026-04-20 13:02:02",
+                "created_at": "2026-04-20 13:02:07"
+            }
+        },
+        "9e66c38c3e": {
+            "scope": "test",
+            "created_at": "2026-04-20 13:03:02",
+            "updated_at": "2026-04-20 13:03:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-130301-08133a5a",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4791.96",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4791.96 USD\/T.oz\nPrevPrice: 4791.96\nChange: 0 (0%)\nTimestamp: 1776679381\nTime: 2026-04-20 13:03:01",
+                "created_at": "2026-04-20 13:03:02"
+            }
+        },
+        "7cb634f53c": {
+            "scope": "test",
+            "created_at": "2026-04-20 13:04:02",
+            "updated_at": "2026-04-20 13:04:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-130401-42195f64",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4791.96",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4791.96 USD\/T.oz\nPrevPrice: 4791.96\nChange: 0 (0%)\nTimestamp: 1776679441\nTime: 2026-04-20 13:04:01",
+                "created_at": "2026-04-20 13:04:02"
+            }
+        },
+        "18e04cf69e": {
+            "scope": "test",
+            "created_at": "2026-04-20 13:05:02",
+            "updated_at": "2026-04-20 13:05:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-130501-a8469e34",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4791.96",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4791.96 USD\/T.oz\nPrevPrice: 4791.96\nChange: 0 (0%)\nTimestamp: 1776679501\nTime: 2026-04-20 13:05:01",
+                "created_at": "2026-04-20 13:05:02"
+            }
+        },
+        "d637f0f2e6": {
+            "scope": "test",
+            "created_at": "2026-04-20 13:06:02",
+            "updated_at": "2026-04-20 13:06:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-130601-a6401a3a",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4791.96",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4791.96 USD\/T.oz\nPrevPrice: 4791.96\nChange: 0 (0%)\nTimestamp: 1776679562\nTime: 2026-04-20 13:06:02",
+                "created_at": "2026-04-20 13:06:02"
+            }
+        },
+        "7af56de4f1": {
+            "scope": "test",
+            "created_at": "2026-04-20 13:07:01",
+            "updated_at": "2026-04-20 13:07:01",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-130701-49a09628",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4791.96",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4791.96 USD\/T.oz\nPrevPrice: 4791.96\nChange: 0 (0%)\nTimestamp: 1776679621\nTime: 2026-04-20 13:07:01",
+                "created_at": "2026-04-20 13:07:01"
+            }
+        },
+        "bd3501f40f": {
+            "scope": "test",
+            "created_at": "2026-04-20 13:08:01",
+            "updated_at": "2026-04-20 13:08:01",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-130801-83d564f4",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4791.96",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4791.96 USD\/T.oz\nPrevPrice: 4791.96\nChange: 0 (0%)\nTimestamp: 1776679681\nTime: 2026-04-20 13:08:01",
+                "created_at": "2026-04-20 13:08:01"
+            }
+        },
+        "bb9431ca57": {
+            "scope": "test",
+            "created_at": "2026-04-20 13:09:02",
+            "updated_at": "2026-04-20 13:09:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-130901-b5da1448",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4791.96",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4791.96 USD\/T.oz\nPrevPrice: 4791.96\nChange: 0 (0%)\nTimestamp: 1776679741\nTime: 2026-04-20 13:09:01",
+                "created_at": "2026-04-20 13:09:02"
+            }
+        },
+        "11f0a8d422": {
+            "scope": "test",
+            "created_at": "2026-04-20 13:10:02",
+            "updated_at": "2026-04-20 13:10:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-131001-603a1c2f",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4798.1",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4798.1 USD\/T.oz\nPrevPrice: 4791.96\nChange: 6.1400000000003 (0.12813128657168%)\nTimestamp: 1776679801\nTime: 2026-04-20 13:10:01",
+                "created_at": "2026-04-20 13:10:02"
+            }
+        },
+        "9c4966fc5f": {
+            "scope": "test",
+            "created_at": "2026-04-20 13:10:18",
+            "updated_at": "2026-04-20 13:10:18",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-131018-7ab71380",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4798.1",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4798.1 USD\/T.oz\nPrevPrice: 4798.1\nChange: 0 (0%)\nTimestamp: 1776679818\nTime: 2026-04-20 13:10:18",
+                "created_at": "2026-04-20 13:10:18"
+            }
+        },
+        "c7068b0793": {
+            "scope": "test",
+            "created_at": "2026-04-20 13:11:08",
+            "updated_at": "2026-04-20 13:11:08",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-131102-1f5cd305",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4798.1",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4798.1 USD\/T.oz\nPrevPrice: 4798.1\nChange: 0 (0%)\nTimestamp: 1776679867\nTime: 2026-04-20 13:11:07",
+                "created_at": "2026-04-20 13:11:08"
+            }
+        },
+        "0c90f900a1": {
+            "scope": "test",
+            "created_at": "2026-04-20 13:12:02",
+            "updated_at": "2026-04-20 13:12:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-131201-0474ab08",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4798.1",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4798.1 USD\/T.oz\nPrevPrice: 4798.1\nChange: 0 (0%)\nTimestamp: 1776679922\nTime: 2026-04-20 13:12:02",
+                "created_at": "2026-04-20 13:12:02"
+            }
+        },
+        "35b25888d7": {
+            "scope": "test",
+            "created_at": "2026-04-20 13:13:02",
+            "updated_at": "2026-04-20 13:13:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-131301-5e9b84f0",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4798.1",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4798.1 USD\/T.oz\nPrevPrice: 4798.1\nChange: 0 (0%)\nTimestamp: 1776679981\nTime: 2026-04-20 13:13:01",
+                "created_at": "2026-04-20 13:13:02"
+            }
+        },
+        "b61372913f": {
+            "scope": "test",
+            "created_at": "2026-04-20 13:14:02",
+            "updated_at": "2026-04-20 13:14:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-131401-ef8789fd",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4798.1",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4798.1 USD\/T.oz\nPrevPrice: 4798.1\nChange: 0 (0%)\nTimestamp: 1776680041\nTime: 2026-04-20 13:14:01",
+                "created_at": "2026-04-20 13:14:02"
+            }
+        },
+        "b035d9b8fe": {
+            "scope": "test",
+            "created_at": "2026-04-20 13:15:02",
+            "updated_at": "2026-04-20 13:15:56",
+            "stats": {
+                "up": 1,
+                "down": 0,
+                "details": 1,
+                "reasons": 1,
+                "risks": 1,
+                "stats": 1,
+                "help": 1,
+                "clicks": 6
+            },
+            "users": {
+                "1642876109": {
+                    "vote": "up",
+                    "updated_at": "2026-04-20 13:15:56",
+                    "username": "Mr_Erik_o"
+                }
+            },
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-131501-315b3169",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4798.1",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4798.1 USD\/T.oz\nPrevPrice: 4798.1\nChange: 0 (0%)\nTimestamp: 1776680102\nTime: 2026-04-20 13:15:02",
+                "created_at": "2026-04-20 13:15:02"
+            },
+            "chat_id": "-1003726302456",
+            "message_id": "288"
+        },
+        "d1de7778de": {
+            "scope": "test",
+            "created_at": "2026-04-20 13:16:02",
+            "updated_at": "2026-04-20 13:16:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-131601-8b4d5386",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4798.1",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4798.1 USD\/T.oz\nPrevPrice: 4798.1\nChange: 0 (0%)\nTimestamp: 1776680161\nTime: 2026-04-20 13:16:01",
+                "created_at": "2026-04-20 13:16:02"
+            }
+        },
+        "0e6aa9b94b": {
+            "scope": "test",
+            "created_at": "2026-04-20 13:17:02",
+            "updated_at": "2026-04-20 13:17:02",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-131701-62383000",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4798.1",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (без ИИ):\nТекущие данные CommodityPriceAPI:\nЦена: 4798.1 USD\/T.oz\nPrevPrice: 4798.1\nChange: 0 (0%)\nTimestamp: 1776680221\nTime: 2026-04-20 13:17:01",
+                "created_at": "2026-04-20 13:17:02"
+            }
+        },
+        "a69bb72f06": {
+            "scope": "test",
+            "created_at": "2026-04-20 13:17:57",
+            "updated_at": "2026-04-20 13:17:57",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-131756-d201b01c",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4798.1",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (AI включен, но ответ не получен):\nТекущие данные CommodityPriceAPI:\nЦена: 4798.1 USD\/T.oz\nPrevPrice: 4798.1\nChange: 0 (0%)\nTimestamp: 1776680276\nTime: 2026-04-20 13:17:56",
+                "created_at": "2026-04-20 13:17:57"
+            }
+        },
+        "0fd45d86ab": {
+            "scope": "manual_test",
+            "created_at": "2026-04-20 13:18:22",
+            "updated_at": "2026-04-20 13:18:22",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "manual_test",
+                "run_id": "test-tg-20260420-131822-60ee8692",
+                "signal_type": "manual",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "Тестовая отправка",
+                "price": "4798.1",
+                "reasons": [
+                    "Проверка связки Telegram webhook + callback"
+                ],
+                "risks": [],
+                "message_preview": "Тестовое сообщение",
+                "created_at": "2026-04-20 13:18:22"
+            }
+        },
+        "6fde10aa23": {
+            "scope": "test",
+            "created_at": "2026-04-20 13:20:36",
+            "updated_at": "2026-04-20 13:20:36",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-132035-ec3dc87c",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4800.49",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (AI включен, но ответ не получен):\nТекущие данные CommodityPriceAPI:\nЦена: 4800.49 USD\/T.oz\nPrevPrice: 4800.49\nChange: 0 (0%)\nTimestamp: 1776680435\nTime: 2026-04-20 13:20:35",
+                "created_at": "2026-04-20 13:20:36"
+            }
+        },
+        "e1bdaf433a": {
+            "scope": "test",
+            "created_at": "2026-04-20 13:26:28",
+            "updated_at": "2026-04-20 13:26:28",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-132627-40afa731",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4800.49",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (AI включен, но ответ не получен):\nТекущие данные CommodityPriceAPI:\nЦена: 4800.49 USD\/T.oz\nPrevPrice: 4800.49\nChange: 0 (0%)\nTimestamp: 1776680787\nTime: 2026-04-20 13:26:27",
+                "created_at": "2026-04-20 13:26:28"
+            }
+        },
+        "2f0b77a254": {
+            "scope": "test",
+            "created_at": "2026-04-20 13:31:49",
+            "updated_at": "2026-04-20 13:31:49",
+            "stats": {
+                "up": 0,
+                "down": 0,
+                "details": 0,
+                "reasons": 0,
+                "risks": 0,
+                "stats": 0,
+                "help": 0,
+                "clicks": 0
+            },
+            "users": [],
+            "context": {
+                "scope": "test",
+                "run_id": "run-20260420-133148-c357117c",
+                "signal_type": "hold",
+                "confidence": 0,
+                "importance": 0,
+                "summary": "AI: невалидный JSON (повтор). Отправлено без AI.",
+                "price": "4798.53",
+                "reasons": [],
+                "risks": [],
+                "message_preview": "⚠️ [TEST MODE ACTIVE]\nНовые цены CommodityPriceAPI (AI включен, но ответ не получен):\nТекущие данные CommodityPriceAPI:\nЦена: 4798.53 USD\/T.oz\nPrevPrice: 4798.53\nChange: 0 (0%)\nTimestamp: 1776681108\nTime: 2026-04-20 13:31:48",
+                "created_at": "2026-04-20 13:31:49"
+            }
+        }
+    }
+}

@@ -1,0 +1,5920 @@
+[
+    {
+        "time": "2026-04-20 14:18:07",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-141806-70271b01",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:18:07",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-141806-70271b01",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:18:07",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-141806-70271b01",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 14:18:07",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-141806-70271b01",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:18:07",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4792.91 USD\/T.oz",
+        "run_id": "run-20260420-141806-70271b01",
+        "meta": {
+            "price": "4792.91",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776683887",
+            "prev_price": "4792.91",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:18:06",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-141806-70271b01",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 14:18:06",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-141806-70271b01",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:17:07",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-141701-1fac3da8",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:17:07",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-141701-1fac3da8",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:17:07",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-141701-1fac3da8",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 14:17:07",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-141701-1fac3da8",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:17:07",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4792.91 USD\/T.oz",
+        "run_id": "run-20260420-141701-1fac3da8",
+        "meta": {
+            "price": "4792.91",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776683827",
+            "prev_price": "4792.91",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:17:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-141701-1fac3da8",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 14:17:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-141701-1fac3da8",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:16:01",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-141601-101a6db9",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:16:01",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-141601-101a6db9",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:16:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-141601-101a6db9",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 14:16:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-141601-101a6db9",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:16:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4792.91 USD\/T.oz",
+        "run_id": "run-20260420-141601-101a6db9",
+        "meta": {
+            "price": "4792.91",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776683761",
+            "prev_price": "4792.91",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:16:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-141601-101a6db9",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 14:16:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-141601-101a6db9",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:15:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-141501-07ba54e5",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:15:02",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-141501-07ba54e5",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:15:02",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-141501-07ba54e5",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 14:15:02",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-141501-07ba54e5",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:15:02",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4792.91 USD\/T.oz",
+        "run_id": "run-20260420-141501-07ba54e5",
+        "meta": {
+            "price": "4792.91",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776683702",
+            "prev_price": "4792.91",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:15:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-141501-07ba54e5",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 14:15:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-141501-07ba54e5",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:14:07",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-141401-1d878f14",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:14:07",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-141401-1d878f14",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:14:02",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-141401-1d878f14",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 14:14:02",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-141401-1d878f14",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:14:02",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4792.91 USD\/T.oz",
+        "run_id": "run-20260420-141401-1d878f14",
+        "meta": {
+            "price": "4792.91",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776683642",
+            "prev_price": "4792.91",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:14:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-141401-1d878f14",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 14:14:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-141401-1d878f14",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:13:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-141301-11a36963",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:13:02",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-141301-11a36963",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:13:02",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-141301-11a36963",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 14:13:02",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-141301-11a36963",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:13:02",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4792.91 USD\/T.oz",
+        "run_id": "run-20260420-141301-11a36963",
+        "meta": {
+            "price": "4792.91",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776683582",
+            "prev_price": "4792.91",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:13:02",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-141301-11a36963",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 14:13:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-141301-11a36963",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:12:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-141201-abecbfb2",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:12:02",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-141201-abecbfb2",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:12:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-141201-abecbfb2",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 14:12:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-141201-abecbfb2",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:12:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4792.91 USD\/T.oz",
+        "run_id": "run-20260420-141201-abecbfb2",
+        "meta": {
+            "price": "4792.91",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776683521",
+            "prev_price": "4792.91",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:12:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-141201-abecbfb2",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 14:12:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-141201-abecbfb2",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:11:07",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-141101-650054e2",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:11:02",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-141101-650054e2",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:11:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-141101-650054e2",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 14:11:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-141101-650054e2",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:11:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4792.91 USD\/T.oz",
+        "run_id": "run-20260420-141101-650054e2",
+        "meta": {
+            "price": "4792.91",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776683461",
+            "prev_price": "4792.91",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:11:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-141101-650054e2",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 14:11:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-141101-650054e2",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:10:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-141001-ca2f9eea",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:10:02",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-141001-ca2f9eea",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:10:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-141001-ca2f9eea",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "170"
+        }
+    },
+    {
+        "time": "2026-04-20 14:10:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-141001-ca2f9eea",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:10:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4792.91 USD\/T.oz",
+        "run_id": "run-20260420-141001-ca2f9eea",
+        "meta": {
+            "price": "4792.91",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776683401",
+            "prev_price": "4796.49",
+            "change": "-3.5799999999999",
+            "change_pct": "-0.074637912306706"
+        }
+    },
+    {
+        "time": "2026-04-20 14:10:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-141001-ca2f9eea",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 14:10:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-141001-ca2f9eea",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:09:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-140902-bed7d73f",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:09:02",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-140902-bed7d73f",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:09:02",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-140902-bed7d73f",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 14:09:02",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-140902-bed7d73f",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:09:02",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.49 USD\/T.oz",
+        "run_id": "run-20260420-140902-bed7d73f",
+        "meta": {
+            "price": "4796.49",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776683342",
+            "prev_price": "4796.49",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:09:02",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-140902-bed7d73f",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 14:09:02",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-140902-bed7d73f",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:08:01",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-140801-4a997490",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:08:01",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-140801-4a997490",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:08:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-140801-4a997490",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 14:08:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-140801-4a997490",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:08:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.49 USD\/T.oz",
+        "run_id": "run-20260420-140801-4a997490",
+        "meta": {
+            "price": "4796.49",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776683281",
+            "prev_price": "4796.49",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:08:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-140801-4a997490",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 14:08:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-140801-4a997490",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:07:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-140701-96da0a56",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:07:01",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-140701-96da0a56",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:07:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-140701-96da0a56",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 14:07:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-140701-96da0a56",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:07:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.49 USD\/T.oz",
+        "run_id": "run-20260420-140701-96da0a56",
+        "meta": {
+            "price": "4796.49",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776683221",
+            "prev_price": "4796.49",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:07:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-140701-96da0a56",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 14:07:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-140701-96da0a56",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:06:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-140602-7650ebbd",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:06:02",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-140602-7650ebbd",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:06:02",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-140602-7650ebbd",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 14:06:02",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-140602-7650ebbd",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:06:02",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.49 USD\/T.oz",
+        "run_id": "run-20260420-140602-7650ebbd",
+        "meta": {
+            "price": "4796.49",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776683162",
+            "prev_price": "4796.49",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:06:02",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-140602-7650ebbd",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 14:06:02",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-140602-7650ebbd",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:05:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-140501-fa8fd75a",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:05:01",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-140501-fa8fd75a",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:05:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-140501-fa8fd75a",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 14:05:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-140501-fa8fd75a",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:05:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.49 USD\/T.oz",
+        "run_id": "run-20260420-140501-fa8fd75a",
+        "meta": {
+            "price": "4796.49",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776683101",
+            "prev_price": "4796.49",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:05:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-140501-fa8fd75a",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 14:05:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-140501-fa8fd75a",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:04:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-140401-16a6da86",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:04:02",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-140401-16a6da86",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:04:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-140401-16a6da86",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 14:04:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-140401-16a6da86",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:04:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.49 USD\/T.oz",
+        "run_id": "run-20260420-140401-16a6da86",
+        "meta": {
+            "price": "4796.49",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776683041",
+            "prev_price": "4796.49",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:04:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-140401-16a6da86",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 14:04:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-140401-16a6da86",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:03:01",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-140301-c5de0da7",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:03:01",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-140301-c5de0da7",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:03:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-140301-c5de0da7",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 14:03:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-140301-c5de0da7",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:03:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.49 USD\/T.oz",
+        "run_id": "run-20260420-140301-c5de0da7",
+        "meta": {
+            "price": "4796.49",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776682981",
+            "prev_price": "4796.49",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:03:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-140301-c5de0da7",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 14:03:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-140301-c5de0da7",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:02:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-140202-41fa7cc1",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:02:02",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-140202-41fa7cc1",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:02:02",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-140202-41fa7cc1",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 14:02:02",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-140202-41fa7cc1",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:02:02",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.49 USD\/T.oz",
+        "run_id": "run-20260420-140202-41fa7cc1",
+        "meta": {
+            "price": "4796.49",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776682922",
+            "prev_price": "4796.49",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:02:02",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-140202-41fa7cc1",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 14:02:02",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-140202-41fa7cc1",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:01:49",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-140148-d94da23b",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:01:48",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-140148-d94da23b",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:01:48",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-140148-d94da23b",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 14:01:48",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-140148-d94da23b",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:01:48",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.49 USD\/T.oz",
+        "run_id": "run-20260420-140148-d94da23b",
+        "meta": {
+            "price": "4796.49",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776682908",
+            "prev_price": "4796.49",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:01:48",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-140148-d94da23b",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 14:01:48",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-140148-d94da23b",
+        "meta": {
+            "is_cron": "0",
+            "manual_force": "1",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:01:12",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-140101-e3e713aa",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:01:12",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-140101-e3e713aa",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:01:07",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-140101-e3e713aa",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 14:01:07",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-140101-e3e713aa",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:01:07",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.49 USD\/T.oz",
+        "run_id": "run-20260420-140101-e3e713aa",
+        "meta": {
+            "price": "4796.49",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776682867",
+            "prev_price": "4796.49",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:01:03",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Настройки модуля сохранены.",
+        "run_id": "save-20260420-140103",
+        "meta": {
+            "model": "gemini-2.5-flash",
+            "log_level": "debug",
+            "ssl_verify": "1",
+            "ai_timeout": "30",
+            "discover_models": "1",
+            "discovery_timeout": "15",
+            "feedback_buttons_enabled": "1",
+            "feedback_include_test": "1",
+            "feedback_auto_webhook": "1",
+            "feedback_force_https": "1",
+            "feedback_webhook_base_url": "https:\/\/dlux-pmr.com\/BOT-TG\/admin.php?module=gold-analyzer&action=tg_feedback&feedback_token=23338c4c86d553b7ddb8265d",
+            "feedback_show_counters": "1",
+            "feedback_legacy_tokens": "0",
+            "feedback_store_max_traces": "1500",
+            "feedback_store_max_users": "5000"
+        }
+    },
+    {
+        "time": "2026-04-20 14:01:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-140101-e3e713aa",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 14:01:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-140101-e3e713aa",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:00:07",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-140002-5a23f424",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:00:07",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-140002-5a23f424",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 14:00:02",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-140002-5a23f424",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "172"
+        }
+    },
+    {
+        "time": "2026-04-20 14:00:02",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-140002-5a23f424",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 14:00:02",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.49 USD\/T.oz",
+        "run_id": "run-20260420-140002-5a23f424",
+        "meta": {
+            "price": "4796.49",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776682802",
+            "prev_price": "4796.71",
+            "change": "-0.22000000000025",
+            "change_pct": "-0.0045864769811028"
+        }
+    },
+    {
+        "time": "2026-04-20 14:00:02",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-140002-5a23f424",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 14:00:02",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-140002-5a23f424",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:59:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-135901-7b5396d0",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:59:02",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-135901-7b5396d0",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:59:02",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-135901-7b5396d0",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:59:02",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-135901-7b5396d0",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:59:02",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.71 USD\/T.oz",
+        "run_id": "run-20260420-135901-7b5396d0",
+        "meta": {
+            "price": "4796.71",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776682742",
+            "prev_price": "4796.71",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:59:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-135901-7b5396d0",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:59:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-135901-7b5396d0",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:58:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-135801-42dbcb13",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:58:02",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-135801-42dbcb13",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:58:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-135801-42dbcb13",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:58:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-135801-42dbcb13",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:58:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.71 USD\/T.oz",
+        "run_id": "run-20260420-135801-42dbcb13",
+        "meta": {
+            "price": "4796.71",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776682681",
+            "prev_price": "4796.71",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:58:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-135801-42dbcb13",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:58:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-135801-42dbcb13",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:56:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-135601-27bacc32",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:56:02",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-135601-27bacc32",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:56:02",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-135601-27bacc32",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:56:02",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-135601-27bacc32",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:56:02",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.71 USD\/T.oz",
+        "run_id": "run-20260420-135601-27bacc32",
+        "meta": {
+            "price": "4796.71",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776682562",
+            "prev_price": "4796.71",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:56:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-135601-27bacc32",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:56:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-135601-27bacc32",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:55:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-135501-79f435b4",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:55:01",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-135501-79f435b4",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:55:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-135501-79f435b4",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:55:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-135501-79f435b4",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:55:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.71 USD\/T.oz",
+        "run_id": "run-20260420-135501-79f435b4",
+        "meta": {
+            "price": "4796.71",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776682501",
+            "prev_price": "4796.71",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:55:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-135501-79f435b4",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:55:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-135501-79f435b4",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:54:20",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-135419-e9018927",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:54:20",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-135419-e9018927",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:54:20",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-135419-e9018927",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:54:20",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-135419-e9018927",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:54:20",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.71 USD\/T.oz",
+        "run_id": "run-20260420-135419-e9018927",
+        "meta": {
+            "price": "4796.71",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776682459",
+            "prev_price": "4796.71",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:54:19",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-135419-e9018927",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:54:19",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-135419-e9018927",
+        "meta": {
+            "is_cron": "0",
+            "manual_force": "1",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:54:01",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-135401-d9d661f1",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:54:01",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-135401-d9d661f1",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:54:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-135401-d9d661f1",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:54:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-135401-d9d661f1",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:54:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.71 USD\/T.oz",
+        "run_id": "run-20260420-135401-d9d661f1",
+        "meta": {
+            "price": "4796.71",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776682441",
+            "prev_price": "4796.71",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:54:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-135401-d9d661f1",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:54:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-135401-d9d661f1",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:53:07",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-135301-6f0836b6",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:53:03",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-135303-e9d6a2b9",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:53:03",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-135303-e9d6a2b9",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:53:03",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-135303-e9d6a2b9",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:53:03",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-135303-e9d6a2b9",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:53:03",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.71 USD\/T.oz",
+        "run_id": "run-20260420-135303-e9d6a2b9",
+        "meta": {
+            "price": "4796.71",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776682383",
+            "prev_price": "4796.71",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:53:03",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-135303-e9d6a2b9",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:53:03",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-135303-e9d6a2b9",
+        "meta": {
+            "is_cron": "0",
+            "manual_force": "1",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:53:01",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-135301-6f0836b6",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:53:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-135301-6f0836b6",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:53:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-135301-6f0836b6",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:53:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.71 USD\/T.oz",
+        "run_id": "run-20260420-135301-6f0836b6",
+        "meta": {
+            "price": "4796.71",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776682381",
+            "prev_price": "4796.71",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:53:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-135301-6f0836b6",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:53:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-135301-6f0836b6",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:52:59",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Настройки модуля сохранены.",
+        "run_id": "save-20260420-135259",
+        "meta": {
+            "model": "gemini-2.5-flash",
+            "log_level": "debug",
+            "ssl_verify": "1",
+            "ai_timeout": "30",
+            "discover_models": "1",
+            "discovery_timeout": "15",
+            "feedback_buttons_enabled": "1",
+            "feedback_include_test": "1",
+            "feedback_auto_webhook": "1",
+            "feedback_force_https": "1",
+            "feedback_webhook_base_url": "https:\/\/dlux-pmr.com\/BOT-TG\/admin.php?module=gold-analyzer&action=tg_feedback&feedback_token=23338c4c86d553b7ddb8265d",
+            "feedback_show_counters": "1",
+            "feedback_legacy_tokens": "0",
+            "feedback_store_max_traces": "1500",
+            "feedback_store_max_users": "5000"
+        }
+    },
+    {
+        "time": "2026-04-20 13:52:50",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-135249-af8df478",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:52:50",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-135249-af8df478",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:52:50",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-135249-af8df478",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:52:50",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-135249-af8df478",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:52:50",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.71 USD\/T.oz",
+        "run_id": "run-20260420-135249-af8df478",
+        "meta": {
+            "price": "4796.71",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776682370",
+            "prev_price": "4796.71",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:52:49",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-135249-af8df478",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:52:49",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-135249-af8df478",
+        "meta": {
+            "is_cron": "0",
+            "manual_force": "1",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:52:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-135201-d0321265",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:52:02",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-135201-d0321265",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:52:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-135201-d0321265",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:52:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-135201-d0321265",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:52:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.71 USD\/T.oz",
+        "run_id": "run-20260420-135201-d0321265",
+        "meta": {
+            "price": "4796.71",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776682321",
+            "prev_price": "4796.71",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:52:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-135201-d0321265",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:52:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-135201-d0321265",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:51:01",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-135101-0ab14e41",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:51:01",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-135101-0ab14e41",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:51:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-135101-0ab14e41",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:51:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-135101-0ab14e41",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:51:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.71 USD\/T.oz",
+        "run_id": "run-20260420-135101-0ab14e41",
+        "meta": {
+            "price": "4796.71",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776682261",
+            "prev_price": "4796.71",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:51:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-135101-0ab14e41",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:51:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-135101-0ab14e41",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:50:49",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-135048-299c9e70",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:50:49",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-135048-299c9e70",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:50:49",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-135048-299c9e70",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:50:49",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-135048-299c9e70",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:50:49",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.71 USD\/T.oz",
+        "run_id": "run-20260420-135048-299c9e70",
+        "meta": {
+            "price": "4796.71",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776682248",
+            "prev_price": "4796.71",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:50:48",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-135048-299c9e70",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:50:48",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-135048-299c9e70",
+        "meta": {
+            "is_cron": "0",
+            "manual_force": "1",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:50:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-135002-0fdec13a",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:50:02",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-135002-0fdec13a",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:50:02",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-135002-0fdec13a",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "172"
+        }
+    },
+    {
+        "time": "2026-04-20 13:50:02",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-135002-0fdec13a",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:50:02",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.71 USD\/T.oz",
+        "run_id": "run-20260420-135002-0fdec13a",
+        "meta": {
+            "price": "4796.71",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776682202",
+            "prev_price": "4796.91",
+            "change": "-0.19999999999982",
+            "change_pct": "-0.0041693506861671"
+        }
+    },
+    {
+        "time": "2026-04-20 13:50:02",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-135002-0fdec13a",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:50:02",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-135002-0fdec13a",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:49:01",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-134901-f4dca080",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:49:01",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-134901-f4dca080",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:49:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-134901-f4dca080",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:49:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-134901-f4dca080",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:49:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.91 USD\/T.oz",
+        "run_id": "run-20260420-134901-f4dca080",
+        "meta": {
+            "price": "4796.91",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776682141",
+            "prev_price": "4796.91",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:49:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-134901-f4dca080",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:49:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-134901-f4dca080",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:48:10",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-134810-c4e86a96",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:48:10",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-134810-c4e86a96",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:48:10",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-134810-c4e86a96",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:48:10",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-134810-c4e86a96",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:48:10",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.91 USD\/T.oz",
+        "run_id": "run-20260420-134810-c4e86a96",
+        "meta": {
+            "price": "4796.91",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776682090",
+            "prev_price": "4796.91",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:48:10",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-134810-c4e86a96",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:48:10",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-134810-c4e86a96",
+        "meta": {
+            "is_cron": "0",
+            "manual_force": "1",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:48:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-134801-acdb0cf5",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:48:01",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-134801-acdb0cf5",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:48:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-134801-acdb0cf5",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:48:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-134801-acdb0cf5",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:48:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.91 USD\/T.oz",
+        "run_id": "run-20260420-134801-acdb0cf5",
+        "meta": {
+            "price": "4796.91",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776682081",
+            "prev_price": "4796.91",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:48:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-134801-acdb0cf5",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:48:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-134801-acdb0cf5",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "test_run": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:47:01",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-134701-c13cb626",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:47:01",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-134701-c13cb626",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:47:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-134701-c13cb626",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:47:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-134701-c13cb626",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:47:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.91 USD\/T.oz",
+        "run_id": "run-20260420-134701-c13cb626",
+        "meta": {
+            "price": "4796.91",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776682021",
+            "prev_price": "4796.91",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:47:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-134701-c13cb626",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:47:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-134701-c13cb626",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:46:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-134602-6b4e2ed2",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:46:02",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-134602-6b4e2ed2",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:46:02",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-134602-6b4e2ed2",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:46:02",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-134602-6b4e2ed2",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:46:02",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.91 USD\/T.oz",
+        "run_id": "run-20260420-134602-6b4e2ed2",
+        "meta": {
+            "price": "4796.91",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776681962",
+            "prev_price": "4796.91",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:46:02",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-134602-6b4e2ed2",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:46:02",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-134602-6b4e2ed2",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:45:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-134502-0f87b529",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:45:02",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-134502-0f87b529",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:45:02",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-134502-0f87b529",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:45:02",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-134502-0f87b529",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:45:02",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.91 USD\/T.oz",
+        "run_id": "run-20260420-134502-0f87b529",
+        "meta": {
+            "price": "4796.91",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776681902",
+            "prev_price": "4796.91",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:45:02",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-134502-0f87b529",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:45:02",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-134502-0f87b529",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:44:07",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-134401-2f992402",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:44:01",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-134401-2f992402",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:44:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-134401-2f992402",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:44:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-134401-2f992402",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:44:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.91 USD\/T.oz",
+        "run_id": "run-20260420-134401-2f992402",
+        "meta": {
+            "price": "4796.91",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776681841",
+            "prev_price": "4796.91",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:44:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-134401-2f992402",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:44:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-134401-2f992402",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:43:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-134301-a0607d09",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:43:02",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-134301-a0607d09",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:43:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-134301-a0607d09",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:43:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-134301-a0607d09",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:43:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.91 USD\/T.oz",
+        "run_id": "run-20260420-134301-a0607d09",
+        "meta": {
+            "price": "4796.91",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776681781",
+            "prev_price": "4796.91",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:43:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-134301-a0607d09",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:43:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-134301-a0607d09",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:42:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-134202-17a91034",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:42:02",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-134202-17a91034",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:42:02",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-134202-17a91034",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:42:02",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-134202-17a91034",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:42:02",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.91 USD\/T.oz",
+        "run_id": "run-20260420-134202-17a91034",
+        "meta": {
+            "price": "4796.91",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776681722",
+            "prev_price": "4796.91",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:42:02",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-134202-17a91034",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:42:02",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-134202-17a91034",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:41:07",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-134101-22bbba82",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:41:07",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-134101-22bbba82",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:41:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-134101-22bbba82",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:41:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-134101-22bbba82",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:41:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.91 USD\/T.oz",
+        "run_id": "run-20260420-134101-22bbba82",
+        "meta": {
+            "price": "4796.91",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776681661",
+            "prev_price": "4796.91",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:41:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-134101-22bbba82",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:41:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-134101-22bbba82",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:40:03",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-134002-60096521",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:40:03",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-134002-60096521",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:40:03",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-134002-60096521",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "170"
+        }
+    },
+    {
+        "time": "2026-04-20 13:40:03",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-134002-60096521",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:40:03",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4796.91 USD\/T.oz",
+        "run_id": "run-20260420-134002-60096521",
+        "meta": {
+            "price": "4796.91",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776681603",
+            "prev_price": "4798.53",
+            "change": "-1.6199999999999",
+            "change_pct": "-0.033760339103848"
+        }
+    },
+    {
+        "time": "2026-04-20 13:40:02",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-134002-60096521",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:40:02",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-134002-60096521",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:39:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-133901-e03cd1d3",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:39:01",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-133901-e03cd1d3",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:39:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-133901-e03cd1d3",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:39:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-133901-e03cd1d3",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:39:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4798.53 USD\/T.oz",
+        "run_id": "run-20260420-133901-e03cd1d3",
+        "meta": {
+            "price": "4798.53",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776681541",
+            "prev_price": "4798.53",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:39:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-133901-e03cd1d3",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:39:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-133901-e03cd1d3",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:38:01",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-133801-224393c1",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:38:01",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-133801-224393c1",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:38:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-133801-224393c1",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:38:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-133801-224393c1",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:38:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4798.53 USD\/T.oz",
+        "run_id": "run-20260420-133801-224393c1",
+        "meta": {
+            "price": "4798.53",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776681481",
+            "prev_price": "4798.53",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:38:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-133801-224393c1",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:38:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-133801-224393c1",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:37:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-133701-d0da3b34",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:37:02",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-133701-d0da3b34",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:37:02",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-133701-d0da3b34",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:37:02",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-133701-d0da3b34",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:37:02",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4798.53 USD\/T.oz",
+        "run_id": "run-20260420-133701-d0da3b34",
+        "meta": {
+            "price": "4798.53",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776681422",
+            "prev_price": "4798.53",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:37:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-133701-d0da3b34",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:37:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-133701-d0da3b34",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:36:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-133601-d1a56320",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:36:02",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-133601-d1a56320",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:36:02",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-133601-d1a56320",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:36:02",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-133601-d1a56320",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:36:02",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4798.53 USD\/T.oz",
+        "run_id": "run-20260420-133601-d1a56320",
+        "meta": {
+            "price": "4798.53",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776681361",
+            "prev_price": "4798.53",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:36:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-133601-d1a56320",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:36:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-133601-d1a56320",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:35:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-133501-8f1cf64b",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:35:01",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-133501-8f1cf64b",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:35:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-133501-8f1cf64b",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:35:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-133501-8f1cf64b",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:35:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4798.53 USD\/T.oz",
+        "run_id": "run-20260420-133501-8f1cf64b",
+        "meta": {
+            "price": "4798.53",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776681301",
+            "prev_price": "4798.53",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:35:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-133501-8f1cf64b",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:35:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-133501-8f1cf64b",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:34:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-133401-13dfc172",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:34:02",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-133401-13dfc172",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:34:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-133401-13dfc172",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:34:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-133401-13dfc172",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:34:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4798.53 USD\/T.oz",
+        "run_id": "run-20260420-133401-13dfc172",
+        "meta": {
+            "price": "4798.53",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776681241",
+            "prev_price": "4798.53",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:34:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-133401-13dfc172",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:34:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-133401-13dfc172",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:33:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-133301-e685022d",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:33:02",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-133301-e685022d",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:33:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-133301-e685022d",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:33:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-133301-e685022d",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:33:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4798.53 USD\/T.oz",
+        "run_id": "run-20260420-133301-e685022d",
+        "meta": {
+            "price": "4798.53",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776681181",
+            "prev_price": "4798.53",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:33:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-133301-e685022d",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:33:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-133301-e685022d",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:32:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-133201-4d3f4479",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:32:02",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-133201-4d3f4479",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:32:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-133201-4d3f4479",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:32:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-133201-4d3f4479",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:32:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4798.53 USD\/T.oz",
+        "run_id": "run-20260420-133201-4d3f4479",
+        "meta": {
+            "price": "4798.53",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776681121",
+            "prev_price": "4798.53",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:32:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-133201-4d3f4479",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:32:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-133201-4d3f4479",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:31:50",
+        "type": "Telegram",
+        "status": "success",
+        "level": "info",
+        "msg": "Сообщение в телеграм канал успешно ушло.",
+        "run_id": "run-20260420-133148-c357117c",
+        "meta": {
+            "http": "200",
+            "feedback_buttons": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:31:49",
+        "type": "Feedback",
+        "status": "info",
+        "level": "info",
+        "msg": "Webhook для feedback уже настроен.",
+        "run_id": "run-20260420-133148-c357117c",
+        "meta": {
+            "changed": "0",
+            "url": "https:\/\/dlux-pmr.com\/BOT-TG\/admin.php?module=gold-analyzer&action=tg_feedback&feedback_token=23338c4c86d553b7ddb8265d"
+        }
+    },
+    {
+        "time": "2026-04-20 13:31:49",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "AI отключен для этого запуска: невалидный JSON даже после повтора. Отправляю сообщение без AI.",
+        "run_id": "run-20260420-133148-c357117c"
+    },
+    {
+        "time": "2026-04-20 13:31:49",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-133148-c357117c",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:31:49",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-133148-c357117c",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:31:48",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-133148-c357117c",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:31:48",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-133148-c357117c",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:31:48",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4798.53 USD\/T.oz",
+        "run_id": "run-20260420-133148-c357117c",
+        "meta": {
+            "price": "4798.53",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776681108",
+            "prev_price": "4798.53",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:31:48",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-133148-c357117c",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:31:48",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-133148-c357117c",
+        "meta": {
+            "is_cron": "0",
+            "manual_force": "1",
+            "runtime_test_mode": "1",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:31:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-133101-542b8889",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:31:01",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-133101-542b8889",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:31:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-133101-542b8889",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:31:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-133101-542b8889",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:31:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4798.53 USD\/T.oz",
+        "run_id": "run-20260420-133101-542b8889",
+        "meta": {
+            "price": "4798.53",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776681061",
+            "prev_price": "4798.53",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:31:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-133101-542b8889",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:31:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-133101-542b8889",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:30:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-133001-546778f2",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:30:02",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-133001-546778f2",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:30:02",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-133001-546778f2",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "159"
+        }
+    },
+    {
+        "time": "2026-04-20 13:30:02",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-133001-546778f2",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:30:02",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4798.53 USD\/T.oz",
+        "run_id": "run-20260420-133001-546778f2",
+        "meta": {
+            "price": "4798.53",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776681001",
+            "prev_price": "4800.49",
+            "change": "-1.96",
+            "change_pct": "-0.040829165356037"
+        }
+    },
+    {
+        "time": "2026-04-20 13:30:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-133001-546778f2",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:30:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-133001-546778f2",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:29:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-132901-ba8c90ec",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:29:02",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-132901-ba8c90ec",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:29:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-132901-ba8c90ec",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:29:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-132901-ba8c90ec",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:29:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4800.49 USD\/T.oz",
+        "run_id": "run-20260420-132901-ba8c90ec",
+        "meta": {
+            "price": "4800.49",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776680941",
+            "prev_price": "4800.49",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:29:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-132901-ba8c90ec",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:29:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-132901-ba8c90ec",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:28:07",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-132801-72fcf43d",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:28:07",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-132801-72fcf43d",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:28:01",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-132801-72fcf43d",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:28:01",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-132801-72fcf43d",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:28:01",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4800.49 USD\/T.oz",
+        "run_id": "run-20260420-132801-72fcf43d",
+        "meta": {
+            "price": "4800.49",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776680881",
+            "prev_price": "4800.49",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:28:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-132801-72fcf43d",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:28:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-132801-72fcf43d",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:27:02",
+        "type": "AI Анализ",
+        "status": "error",
+        "level": "error",
+        "msg": "Gemini повторно вернул невалидный формат.",
+        "run_id": "run-20260420-132701-97cd8632",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:27:02",
+        "type": "AI Анализ",
+        "status": "warning",
+        "level": "warning",
+        "msg": "Gemini вернул JSON без обязательных полей. Пробую повторный запрос...",
+        "run_id": "run-20260420-132701-97cd8632",
+        "meta": {
+            "reason": "missing_required_fields",
+            "json_error": "No error",
+            "raw": "{}",
+            "runtime_test_mode": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:27:02",
+        "type": "AI Анализ",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Параметры AI запроса.",
+        "run_id": "run-20260420-132701-97cd8632",
+        "meta": {
+            "api_versions": "v1beta,v1",
+            "fallback_models": "gemini-2.0-flash,gemini-2.0-flash-001,gemini-1.5-flash,gemini-1.5-pro,gemini-1.5-flash-8b",
+            "connect_timeout": "10",
+            "timeout": "30",
+            "ssl_verify": "1",
+            "prompt_length": "337",
+            "context_length": "138"
+        }
+    },
+    {
+        "time": "2026-04-20 13:27:02",
+        "type": "AI Анализ",
+        "status": "info",
+        "level": "info",
+        "msg": "Отправка контекста к Gemini API...",
+        "run_id": "run-20260420-132701-97cd8632",
+        "meta": {
+            "model": "gemini-2.5-flash"
+        }
+    },
+    {
+        "time": "2026-04-20 13:27:02",
+        "type": "Парсинг",
+        "status": "success",
+        "level": "info",
+        "msg": "XAU Цена: 4800.49 USD\/T.oz",
+        "run_id": "run-20260420-132701-97cd8632",
+        "meta": {
+            "price": "4800.49",
+            "unit": "T.oz",
+            "quote": "USD",
+            "timestamp": "1776680822",
+            "prev_price": "4800.49",
+            "change": "0",
+            "change_pct": "0"
+        }
+    },
+    {
+        "time": "2026-04-20 13:27:01",
+        "type": "Парсинг",
+        "status": "debug",
+        "level": "debug",
+        "msg": "Подготовка запроса к CommodityPriceAPI.",
+        "run_id": "run-20260420-132701-97cd8632",
+        "meta": {
+            "connect_timeout": "10",
+            "timeout": "25",
+            "ssl_verify": "1"
+        }
+    },
+    {
+        "time": "2026-04-20 13:27:01",
+        "type": "Система",
+        "status": "info",
+        "level": "info",
+        "msg": "Запуск цикла мониторинга...",
+        "run_id": "run-20260420-132701-97cd8632",
+        "meta": {
+            "is_cron": "1",
+            "manual_force": "0",
+            "runtime_test_mode": "0",
+            "model": "gemini-2.5-flash"
+        }
+    }
+]
