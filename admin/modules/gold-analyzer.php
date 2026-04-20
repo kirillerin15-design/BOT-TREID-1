@@ -1778,6 +1778,9 @@ if ((isset($_GET['action']) && ($_GET['action'] === 'force_run' || $_GET['action
             $ai_err = $ai_call['err'];
             $ai_status = (int) $ai_call['status'];
 
+            // Логируем сырой ответ для отладки
+            add_ga_log($LOGS_FILE, 'AI Анализ', 'debug', 'Сырой ответ Gemini API.', $log_cfg, ['raw_response_preview' => ga_mb_substr((string) $ai_raw, 0, 500), 'status' => (string) $ai_status]);
+
             if ($ai_raw !== false && $ai_status === 200) {
                 if (!empty($ai_call['model']) && $data['gemini_model'] !== $ai_call['model']) {
                     $data['gemini_model'] = $ai_call['model'];
@@ -1785,12 +1788,40 @@ if ((isset($_GET['action']) && ($_GET['action'] === 'force_run' || $_GET['action
                 }
                 $ai_j = json_decode($ai_raw, true) ?: [];
                 $resp_text = '{}';
+                
+                // Логируем распарсенный JSON структуры ответа
+                add_ga_log($LOGS_FILE, 'AI Анализ', 'debug', 'Структура ответа Gemini.', $log_cfg, ['has_candidates' => isset($ai_j['candidates']) ? '1' : '0', 'candidates_count' => isset($ai_j['candidates']) ? count($ai_j['candidates']) : '0', 'has_text_directly' => isset($ai_j['text']) ? '1' : '0']);
+                
+                // При использовании responseMimeType: application/json, Gemini может вернуть JSON напрямую
+                // Проверяем несколько возможных форматов ответа
                 $parts0 = $ai_j['candidates'][0]['content']['parts'] ?? [];
                 if (is_array($parts0)) {
                     foreach ($parts0 as $p) {
                         if (is_array($p) && isset($p['text']) && trim((string) $p['text']) !== '') {
                             $resp_text = (string) $p['text'];
                             break;
+                        }
+                    }
+                }
+                
+                // Если parts пуст или содержит только {}, пробуем получить JSON напрямую из ответа
+                if ($resp_text === '{}' || $resp_text === '') {
+                    // Проверяем, есть ли текст напрямую в candidates[0].content.text
+                    $direct_text = $ai_j['candidates'][0]['content']['text'] ?? '';
+                    if (!empty($direct_text)) {
+                        $resp_text = (string) $direct_text;
+                    }
+                    // Если всё ещё пусто, возможно весь ответ - это JSON строка в первом candidate
+                    if ($resp_text === '{}' || $resp_text === '') {
+                        // Проверяем структуру ответа - иногда Gemini возвращает JSON без обёртки candidates
+                        if (isset($ai_j['text'])) {
+                            $resp_text = (string) $ai_j['text'];
+                        } elseif (isset($ai_j['candidates']) && is_array($ai_j['candidates']) && !empty($ai_j['candidates'])) {
+                            // Пробуем сериализовать содержимое candidate обратно
+                            $candidate_content = $ai_j['candidates'][0]['content'] ?? null;
+                            if (is_array($candidate_content) && !isset($candidate_content['parts'])) {
+                                $resp_text = json_encode($candidate_content, JSON_UNESCAPED_UNICODE);
+                            }
                         }
                     }
                 }
@@ -1874,6 +1905,8 @@ if ((isset($_GET['action']) && ($_GET['action'] === 'force_run' || $_GET['action
                     if ($ai_raw2 !== false && $ai_status2 === 200) {
                         $ai_j2 = json_decode((string) $ai_raw2, true) ?: [];
                         $resp_text2 = '{}';
+                        
+                        // Аналогичная логика для повторного запроса - проверяем разные форматы ответа
                         $parts02 = $ai_j2['candidates'][0]['content']['parts'] ?? [];
                         if (is_array($parts02)) {
                             foreach ($parts02 as $p2) {
@@ -1882,10 +1915,29 @@ if ((isset($_GET['action']) && ($_GET['action'] === 'force_run' || $_GET['action
                                     break;
                                 }
                             }
-                            if ($resp_text2 === '{}' && !empty($parts02[0]) && is_array($parts02[0])) {
-                                $enc2 = json_encode($parts02[0], JSON_UNESCAPED_UNICODE);
-                                $resp_text2 = $enc2 !== false ? $enc2 : '{}';
+                        }
+                        
+                        // Если parts пуст или содержит только {}, пробуем альтернативные источники
+                        if ($resp_text2 === '{}' || $resp_text2 === '') {
+                            $direct_text2 = $ai_j2['candidates'][0]['content']['text'] ?? '';
+                            if (!empty($direct_text2)) {
+                                $resp_text2 = (string) $direct_text2;
                             }
+                            if ($resp_text2 === '{}' || $resp_text2 === '') {
+                                if (isset($ai_j2['text'])) {
+                                    $resp_text2 = (string) $ai_j2['text'];
+                                } elseif (isset($ai_j2['candidates']) && is_array($ai_j2['candidates']) && !empty($ai_j2['candidates'])) {
+                                    $candidate_content2 = $ai_j2['candidates'][0]['content'] ?? null;
+                                    if (is_array($candidate_content2) && !isset($candidate_content2['parts'])) {
+                                        $resp_text2 = json_encode($candidate_content2, JSON_UNESCAPED_UNICODE);
+                                    }
+                                }
+                            }
+                        }
+                        
+                        if ($resp_text2 === '{}' && !empty($parts02[0]) && is_array($parts02[0])) {
+                            $enc2 = json_encode($parts02[0], JSON_UNESCAPED_UNICODE);
+                            $resp_text2 = $enc2 !== false ? $enc2 : '{}';
                         }
                         $resp_json_text2 = $resp_text2;
                         $j1r = strpos($resp_json_text2, '{');
