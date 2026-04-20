@@ -2485,1168 +2485,507 @@ if (trim((string) ($data['tg_chat_id'] ?? '')) === '') $ga_missing[] = 'TG chat_
 if ($ga_is_ai && trim((string) ($data['gemini_key'] ?? '')) === '') $ga_missing[] = 'Gemini key';
 
 $ga_worker_url = ga_build_module_url($MODULE_ID, ['action' => 'run_worker', 'cron_token' => $data['cron_token']]);
+$ga_worker_url = ga_build_module_url($MODULE_ID, ['action' => 'run_worker', 'cron_token' => $data['cron_token']]);
 ?>
 
 <?php if (!$ga_show_legacy_ui): ?>
     <div class="ga-admin">
-        <div class="ga-topbar">
-            <div>
-                <div class="ga-title">Gold Analyzer • XAU мониторинг</div>
-                <div class="ga-chips">
-                    <span class="ga-chip <?php echo $ga_is_bot_on ? 'ok' : 'bad'; ?>"><?php echo $ga_is_bot_on ? 'Система ON' : 'Система OFF'; ?></span>
-                    <span class="ga-chip <?php echo $ga_is_test ? 'warn' : 'ok'; ?>"><?php echo $ga_is_test ? 'Тестовый режим' : 'Рабочий режим'; ?></span>
-                    <span class="ga-chip <?php echo $ga_is_ai ? 'ok' : 'muted'; ?>"><?php echo $ga_is_ai ? 'AI включен' : 'AI выключен'; ?></span>
-                    <span class="ga-chip <?php echo $ga_is_bridge ? 'ok' : 'muted'; ?>"><?php echo $ga_is_bridge ? 'Bridge ON' : 'Bridge OFF'; ?></span>
-                    <span class="ga-chip <?php echo $ga_is_feedback ? 'ok' : 'muted'; ?>"><?php echo $ga_is_feedback ? 'Feedback ON' : 'Feedback OFF'; ?></span>
-                    <?php if (!empty($ga_missing)): ?>
-                        <span class="ga-chip bad">Не заполнено: <?php echo h(implode(', ', $ga_missing)); ?></span>
-                    <?php endif; ?>
-                </div>
-            </div>
-            <div class="ga-actions">
-                <?php if (!$ga_is_bot_on): ?>
-                    <a href="?module=<?php echo $MODULE_ID; ?>&action=start_now" class="btn btn-primary ga-btn-strong">▶ Запустить сейчас</a>
-                <?php else: ?>
-                    <a href="?module=<?php echo $MODULE_ID; ?>&action=force_run" class="btn btn-primary ga-btn-strong">⚡ RUN сейчас</a>
-                <?php endif; ?>
-                <a href="?module=<?php echo $MODULE_ID; ?>&action=test_run" class="btn ga-btn">🧪 Тестовый RUN</a>
-                <a href="?module=<?php echo $MODULE_ID; ?>&action=test_tg" class="btn ga-btn">🧪 Test TG</a>
-                <a href="?module=<?php echo $MODULE_ID; ?>&action=test_ai" class="btn ga-btn">🧪 Test AI</a>
-                <a href="?module=<?php echo $MODULE_ID; ?>&action=clear_logs" class="btn ga-btn">🗑 Очистить логи</a>
-                <a href="?module=<?php echo $MODULE_ID; ?>&legacy_ui=1" class="btn ga-btn ga-btn-ghost">Legacy UI</a>
-            </div>
-        </div>
-
-        <div class="card ga-card">
-            <div class="card-head ga-head">🚀 Быстрый старт</div>
-            <div class="card-body ga-body">
-                <div class="ga-grid2">
-                    <div class="ga-box">
-                        <div class="ga-box-title">1) Заполни ключи и Telegram</div>
-                        <div class="ga-box-text">
-                            CommodityPriceAPI → цена XAU<br>
-                            Telegram → token + chat_id<br>
-                            (Если AI включен) Gemini → key + модель
-                        </div>
-                    </div>
-                    <div class="ga-box">
-                        <div class="ga-box-title">2) Проверь связку</div>
-                        <div class="ga-box-text">
-                            <b>Test TG</b> → тестовый пост в канал<br>
-                            <b>Test AI</b> → успех или понятная ошибка в логах<br>
-                            <b>Тестовый RUN</b> → прогон цены+AI+Telegram (разово, с пометкой теста)<br>
-                            <b>Запустить сейчас</b> → включит систему и отправит первый пост сразу
-                        </div>
+        <div class="ga-container">
+            <!-- SIDEBAR NAVIGATION -->
+            <aside class="ga-sidebar">
+                <div class="ga-sidebar-header">
+                    <div class="ga-logo">
+                        <span class="ga-logo-icon">🪙</span>
+                        <span class="ga-logo-text">Gold Analyzer</span>
                     </div>
                 </div>
-
-                <div class="ga-grid2 ga-mt">
-                    <div class="ga-box">
-                        <div class="ga-box-title">3) Cron (мониторинг)</div>
-                        <div class="ga-box-text ga-dim">
-                            <?php echo ($data['test_mode'] === '1') ? '<b class="ga-warn">ТЕСТОВЫЙ:</b> раз в минуту.' : '<b class="ga-ok">РАБОЧИЙ:</b> раз в 12 часов.'; ?>
-                        </div>
-                        <div class="ga-code">
-                            <code id="ga_cron_cmd">curl -L "<?php echo $CRON_URL; ?>"</code>
-                            <button type="button" class="btn ga-btn ga-copy" data-ga-copy="#ga_cron_cmd">Скопировать</button>
-                        </div>
+                
+                <nav class="ga-nav">
+                    <div class="ga-nav-section">
+                        <div class="ga-nav-section-title">Основные</div>
+                        <a href="#dashboard" class="ga-nav-item active" data-tab="dashboard">
+                            <span class="ga-nav-icon">📊</span>
+                            <span>Dashboard</span>
+                        </a>
+                        <a href="#settings" class="ga-nav-item" data-tab="settings">
+                            <span class="ga-nav-icon">⚙️</span>
+                            <span>Настройки</span>
+                        </a>
+                        <a href="#api-keys" class="ga-nav-item" data-tab="api-keys">
+                            <span class="ga-nav-icon">🔑</span>
+                            <span>API Ключи</span>
+                        </a>
                     </div>
-                    <div class="ga-box">
-                        <div class="ga-box-title">4) Cron (feedback очередь)</div>
-                        <div class="ga-code">
-                            <code id="ga_worker_cmd">curl -L "<?php echo $ga_worker_url; ?>"</code>
-                            <button type="button" class="btn ga-btn ga-copy" data-ga-copy="#ga_worker_cmd">Скопировать</button>
-                        </div>
-                        <div class="ga-box-text ga-dim ga-mt-sm">
-                            Shared-хостинг:<br>
-                            <span class="ga-inlinecode" id="ga_worker_cron">*/1 * * * * curl -L "<?php echo $ga_worker_url; ?>" &gt; /dev/null 2&gt;&amp;1</span>
-                            <button type="button" class="btn ga-btn ga-copy ga-ml" data-ga-copy="#ga_worker_cron">Скопировать</button>
-                        </div>
+                    
+                    <div class="ga-nav-section">
+                        <div class="ga-nav-section-title">AI & Telegram</div>
+                        <a href="#ai-config" class="ga-nav-item" data-tab="ai-config">
+                            <span class="ga-nav-icon">🧠</span>
+                            <span>Gemini AI</span>
+                        </a>
+                        <a href="#feedback" class="ga-nav-item" data-tab="feedback">
+                            <span class="ga-nav-icon">💬</span>
+                            <span>Feedback</span>
+                        </a>
+                        <a href="#telegram" class="ga-nav-item" data-tab="telegram">
+                            <span class="ga-nav-icon">📬</span>
+                            <span>Telegram</span>
+                        </a>
+                    </div>
+                    
+                    <div class="ga-nav-section">
+                        <div class="ga-nav-section-title">Мониторинг</div>
+                        <a href="#logs" class="ga-nav-item" data-tab="logs">
+                            <span class="ga-nav-icon">📋</span>
+                            <span>Логи</span>
+                        </a>
+                        <a href="#snapshots" class="ga-nav-item" data-tab="snapshots">
+                            <span class="ga-nav-icon">📸</span>
+                            <span>Снапшоты</span>
+                        </a>
+                        <a href="#cron" class="ga-nav-item" data-tab="cron">
+                            <span class="ga-nav-icon">⏰</span>
+                            <span>CRON</span>
+                        </a>
+                    </div>
+                </nav>
+                
+                <div class="ga-sidebar-footer">
+                    <div class="ga-status-badge <?php echo $ga_is_bot_on ? 'status-on' : 'status-off'; ?>">
+                        <span class="ga-status-dot"></span>
+                        <span><?php echo $ga_is_bot_on ? 'Система активна' : 'Система отключена'; ?></span>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="ga-layout">
-            <div class="ga-form">
-                <form method="POST" class="app-form">
-                    <input type="hidden" name="action" value="save_configs">
-
-                    <div class="card ga-card ga-mt">
-                        <div class="card-head ga-head">⚙️ Основное</div>
-                        <div class="card-body ga-body">
-                            <div class="ga-grid3">
-                                <label class="ga-toggle">
-                                    <span>🚦 Система (главный)</span>
-                                    <span class="mod-switch">
-                                        <input type="checkbox" name="bot_active" value="1" <?php echo ($data['bot_active'] == '1') ? 'checked' : ''; ?>>
-                                        <span class="mod-switch-slider"></span>
-                                    </span>
-                                </label>
-                                <label class="ga-toggle">
-                                    <span>🧪 Тест режим</span>
-                                    <span class="mod-switch">
-                                        <input type="checkbox" name="test_mode" value="1" <?php echo ($data['test_mode'] == '1') ? 'checked' : ''; ?>>
-                                        <span class="mod-switch-slider"></span>
-                                    </span>
-                                </label>
-                                <label class="ga-toggle">
-                                    <span>✨ Gemini AI</span>
-                                    <span class="mod-switch">
-                                        <input type="checkbox" name="use_ai" value="1" <?php echo ($data['use_ai'] == '1') ? 'checked' : ''; ?>>
-                                        <span class="mod-switch-slider"></span>
-                                    </span>
-                                </label>
+            </aside>
+            
+            <!-- MAIN CONTENT AREA -->
+            <main class="ga-main">
+                <!-- TOP BAR -->
+                <header class="ga-topbar">
+                    <div class="ga-topbar-left">
+                        <h1 class="ga-page-title" id="page-title">Dashboard</h1>
+                    </div>
+                    <div class="ga-topbar-right">
+                        <div class="ga-status-chips">
+                            <span class="ga-chip <?php echo $ga_is_test ? 'chip-warn' : 'chip-ok'; ?>">
+                                <?php echo $ga_is_test ? '🧪 Тест' : '✅ Рабочий'; ?>
+                            </span>
+                            <span class="ga-chip <?php echo $ga_is_ai ? 'chip-ok' : 'chip-muted'; ?>">
+                                AI <?php echo $ga_is_ai ? 'ON' : 'OFF'; ?>
+                            </span>
+                            <span class="ga-chip <?php echo $ga_is_bridge ? 'chip-ok' : 'chip-muted'; ?>">
+                                Bridge <?php echo $ga_is_bridge ? 'ON' : 'OFF'; ?>
+                            </span>
+                        </div>
+                        <div class="ga-actions">
+                            <?php if (!$ga_is_bot_on): ?>
+                                <a href="?module=<?php echo $MODULE_ID; ?>&action=start_now" class="btn btn-primary ga-btn-action">▶ Запустить</a>
+                            <?php else: ?>
+                                <a href="?module=<?php echo $MODULE_ID; ?>&action=force_run" class="btn btn-primary ga-btn-action">⚡ RUN</a>
+                            <?php endif; ?>
+                            <a href="?module=<?php echo $MODULE_ID; ?>&action=test_run" class="btn ga-btn-secondary">🧪 Тест</a>
+                        </div>
+                    </div>
+                </header>
+                
+                <!-- TAB CONTENT -->
+                <div class="ga-content">
+                    <!-- DASHBOARD TAB -->
+                    <div class="ga-tab active" id="tab-dashboard">
+                        <div class="ga-cards-grid">
+                            <div class="ga-stat-card">
+                                <div class="ga-stat-icon">🚦</div>
+                                <div class="ga-stat-info">
+                                    <div class="ga-stat-value"><?php echo $ga_is_bot_on ? 'ACTIVE' : 'STOPPED'; ?></div>
+                                    <div class="ga-stat-label">Статус системы</div>
+                                </div>
                             </div>
-                            <div class="ga-help ga-mt-sm">
-                                <b>Система OFF</b> блокирует cron-цикл и рабочий <b>RUN</b> (и отправку в Telegram). Кнопки <b>Test TG</b>/<b>Test AI</b>/<b>Тестовый RUN</b> — для диагностики и могут запускаться вручную.
+                            <div class="ga-stat-card">
+                                <div class="ga-stat-icon">🧠</div>
+                                <div class="ga-stat-info">
+                                    <div class="ga-stat-value"><?php echo h($data['gemini_model'] ?? '-'); ?></div>
+                                    <div class="ga-stat-label">AI Модель</div>
+                                </div>
+                            </div>
+                            <div class="ga-stat-card">
+                                <div class="ga-stat-icon">📬</div>
+                                <div class="ga-stat-info">
+                                    <div class="ga-stat-value"><?php echo h($data['tg_chat_id'] ?? 'Не настроен'); ?></div>
+                                    <div class="ga-stat-label">Telegram канал</div>
+                                </div>
+                            </div>
+                            <div class="ga-stat-card">
+                                <div class="ga-stat-icon">⏰</div>
+                                <div class="ga-stat-info">
+                                    <div class="ga-stat-value"><?php echo $ga_is_test ? '1 мин' : '12 час'; ?></div>
+                                    <div class="ga-stat-label">Интервал CRON</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ga-section">
+                            <h2 class="ga-section-title">🚀 Быстрый старт</h2>
+                            <div class="ga-steps-grid">
+                                <div class="ga-step-card">
+                                    <div class="ga-step-number">1</div>
+                                    <div class="ga-step-content">
+                                        <h3>Заполни ключи</h3>
+                                        <p>CommodityPriceAPI → цена XAU<br>Telegram → token + chat_id<br>Gemini → API key</p>
+                                    </div>
+                                </div>
+                                <div class="ga-step-card">
+                                    <div class="ga-step-number">2</div>
+                                    <div class="ga-step-content">
+                                        <h3>Проверь связку</h3>
+                                        <p><b>Test TG</b> → тест в канал<br><b>Test AI</b> → проверка AI<br><b>Тестовый RUN</b> → полный прогон</p>
+                                    </div>
+                                </div>
+                                <div class="ga-step-card">
+                                    <div class="ga-step-number">3</div>
+                                    <div class="ga-step-content">
+                                        <h3>Настрой CRON</h3>
+                                        <p>Добавь команду в планировщик задач вашего хостинга</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    
+                    <!-- SETTINGS TAB -->
+                    <div class="ga-tab" id="tab-settings">
+                        <form method="POST" class="ga-form">
+                            <input type="hidden" name="action" value="save_configs">
+                            
+                            <div class="ga-section">
+                                <h2 class="ga-section-title">⚙️ Основные настройки</h2>
+                                <div class="ga-settings-grid">
+                                    <label class="ga-toggle-card">
+                                        <div class="ga-toggle-content">
+                                            <span class="ga-toggle-title">🚦 Система</span>
+                                            <span class="ga-toggle-desc">Главный переключатель модуля</span>
+                                        </div>
+                                        <span class="mod-switch">
+                                            <input type="checkbox" name="bot_active" value="1" <?php echo ($data['bot_active'] == '1') ? 'checked' : ''; ?>>
+                                            <span class="mod-switch-slider"></span>
+                                        </span>
+                                    </label>
+                                    
+                                    <label class="ga-toggle-card">
+                                        <div class="ga-toggle-content">
+                                            <span class="ga-toggle-title">🧪 Тест режим</span>
+                                            <span class="ga-toggle-desc">Частые запуски для отладки</span>
+                                        </div>
+                                        <span class="mod-switch">
+                                            <input type="checkbox" name="test_mode" value="1" <?php echo ($data['test_mode'] == '1') ? 'checked' : ''; ?>>
+                                            <span class="mod-switch-slider"></span>
+                                        </span>
+                                    </label>
+                                    
+                                    <label class="ga-toggle-card">
+                                        <div class="ga-toggle-content">
+                                            <span class="ga-toggle-title">✨ Gemini AI</span>
+                                            <span class="ga-toggle-desc">Использовать нейросеть для анализа</span>
+                                        </div>
+                                        <span class="mod-switch">
+                                            <input type="checkbox" name="use_ai" value="1" <?php echo ($data['use_ai'] == '1') ? 'checked' : ''; ?>>
+                                            <span class="mod-switch-slider"></span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="ga-form-actions">
+                                <button type="submit" class="btn btn-primary ga-btn-save">💾 Сохранить настройки</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- API KEYS TAB -->
+                    <div class="ga-tab" id="tab-api-keys">
+                        <form method="POST" class="ga-form">
+                            <input type="hidden" name="action" value="save_configs">
+                            
+                            <div class="ga-section">
+                                <h2 class="ga-section-title">🔑 API Ключи</h2>
+                                <div class="ga-input-group">
+                                    <label class="ga-label">
+                                        <span class="ga-label-text">CommodityPriceAPI Key</span>
+                                        <span class="ga-label-hint">Ключ для получения цены золота XAU</span>
+                                    </label>
+                                    <input type="password" name="goldapi_key" value="<?php echo h($data['goldapi_key']); ?>" placeholder="e16ce0ea-c213-..." class="ga-input">
+                                </div>
+                                
+                                <div class="ga-input-group">
+                                    <label class="ga-label">
+                                        <span class="ga-label-text">Telegram Bot Token</span>
+                                        <span class="ga-label-hint">Токен бота от @BotFather</span>
+                                    </label>
+                                    <input type="password" name="tg_token" value="<?php echo h($data['tg_token']); ?>" placeholder="123456:ABC..." class="ga-input">
+                                </div>
+                                
+                                <div class="ga-input-group">
+                                    <label class="ga-label">
+                                        <span class="ga-label-text">Telegram Chat ID</span>
+                                        <span class="ga-label-hint">ID канала или группы (часто начинается на -100)</span>
+                                    </label>
+                                    <input type="text" name="tg_chat_id" value="<?php echo h($data['tg_chat_id']); ?>" placeholder="-1001234567890" class="ga-input">
+                                </div>
+                            </div>
+                            
+                            <div class="ga-form-actions">
+                                <button type="submit" class="btn btn-primary ga-btn-save">💾 Сохранить ключи</button>
+                            </div>
+                        </form>
+                    </div>
 
-                    <div class="card ga-card ga-mt">
-                        <div class="card-head ga-head">🔑 API и Telegram</div>
-                        <div class="card-body ga-body">
-                            <div class="ga-grid2">
-                                <div>
-                                    <label>CommodityPriceAPI key</label>
-                                    <input type="password" name="goldapi_key" value="<?php echo h($data['goldapi_key']); ?>" placeholder="e16ce0ea-c213-...">
-                                    <div class="ga-hint">Ключ нужен для цены XAU. В код не вшивается.</div>
+                    <!-- AI CONFIG TAB -->
+                    <div class="ga-tab" id="tab-ai-config">
+                        <form method="POST" class="ga-form">
+                            <input type="hidden" name="action" value="save_configs">
+                            
+                            <div class="ga-section">
+                                <h2 class="ga-section-title">🧠 Gemini AI Настройки</h2>
+                                
+                                <div class="ga-input-group">
+                                    <label class="ga-label">
+                                        <span class="ga-label-text">Gemini API Key</span>
+                                        <span class="ga-label-hint"><a href="https://aistudio.google.com/app/apikey" target="_blank">Получить ключ</a></span>
+                                    </label>
+                                    <input type="password" name="gemini_key" value="<?php echo h($data['gemini_key']); ?>" placeholder="AIzaSy..." class="ga-input">
                                 </div>
-                                <div>
-                                    <label>Telegram chat_id (канал/группа)</label>
-                                    <input type="text" name="tg_chat_id" value="<?php echo h($data['tg_chat_id']); ?>" placeholder="-1001234567890">
-                                    <div class="ga-hint">Часто начинается на <code>-100</code>.</div>
+                                
+                                <div class="ga-input-group">
+                                    <label class="ga-label">
+                                        <span class="ga-label-text">Модель</span>
+                                    </label>
+                                    <select name="gemini_model" class="ga-select">
+                                        <optgroup label="Актуальные модели">
+                                            <option value="gemini-2.5-flash" <?php echo ($data['gemini_model'] === 'gemini-2.5-flash') ? 'selected' : ''; ?>>gemini-2.5-flash (recommended)</option>
+                                            <option value="gemini-2.5-flash-lite" <?php echo ($data['gemini_model'] === 'gemini-2.5-flash-lite') ? 'selected' : ''; ?>>gemini-2.5-flash-lite</option>
+                                            <option value="gemini-flash-latest" <?php echo ($data['gemini_model'] === 'gemini-flash-latest') ? 'selected' : ''; ?>>gemini-flash-latest</option>
+                                        </optgroup>
+                                        <optgroup label="Legacy">
+                                            <option value="gemini-2.0-flash" <?php echo ($data['gemini_model'] === 'gemini-2.0-flash') ? 'selected' : ''; ?>>gemini-2.0-flash</option>
+                                            <option value="gemini-1.5-pro" <?php echo ($data['gemini_model'] === 'gemini-1.5-pro') ? 'selected' : ''; ?>>gemini-1.5-pro</option>
+                                            <option value="gemini-1.5-flash" <?php echo ($data['gemini_model'] === 'gemini-1.5-flash') ? 'selected' : ''; ?>>gemini-1.5-flash</option>
+                                        </optgroup>
+                                    </select>
                                 </div>
-                                <div>
-                                    <label>Telegram bot token</label>
-                                    <input type="password" name="tg_token" value="<?php echo h($data['tg_token']); ?>" placeholder="123456:ABC...">
-                                    <div class="ga-hint">Боту нужны права писать в канал/группу.</div>
+                                
+                                <div class="ga-input-group">
+                                    <label class="ga-label">
+                                        <span class="ga-label-text">Threshold (0-100)</span>
+                                        <span class="ga-label-hint">Минимальная важность для отправки в Telegram</span>
+                                    </label>
+                                    <input type="number" name="threshold" value="<?php echo h($data['threshold']); ?>" min="0" max="100" class="ga-input">
                                 </div>
-                                <div class="ga-box ga-box-compact">
-                                    <div class="ga-box-title">Быстрые тесты</div>
+                                
+                                <div class="ga-input-group">
+                                    <label class="ga-label">
+                                        <span class="ga-label-text">Системный промпт</span>
+                                    </label>
+                                    <textarea name="prompt" rows="8" class="ga-textarea"><?php echo h($data['prompt']); ?></textarea>
+                                </div>
+                            </div>
+                            
+                            <div class="ga-form-actions">
+                                <button type="submit" class="btn btn-primary ga-btn-save">💾 Сохранить AI настройки</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- FEEDBACK TAB -->
+                    <div class="ga-tab" id="tab-feedback">
+                        <form method="POST" class="ga-form">
+                            <input type="hidden" name="action" value="save_configs">
+                            
+                            <div class="ga-section">
+                                <h2 class="ga-section-title">💬 Feedback Кнопки</h2>
+                                
+                                <div class="ga-toggles-vertical">
+                                    <label class="ga-toggle-row">
+                                        <span class="ga-toggle-label">Включить inline-кнопки</span>
+                                        <span class="mod-switch">
+                                            <input type="checkbox" name="feedback_buttons_enabled" <?php echo ($data['feedback_buttons_enabled'] == '1') ? 'checked' : ''; ?>>
+                                            <span class="mod-switch-slider"></span>
+                                        </span>
+                                    </label>
+                                    <label class="ga-toggle-row">
+                                        <span class="ga-toggle-label">Показывать в тестовом режиме</span>
+                                        <span class="mod-switch">
+                                            <input type="checkbox" name="feedback_include_test" <?php echo ($data['feedback_include_test'] == '1') ? 'checked' : ''; ?>>
+                                            <span class="mod-switch-slider"></span>
+                                        </span>
+                                    </label>
+                                    <label class="ga-toggle-row">
+                                        <span class="ga-toggle-label">Автонастройка webhook</span>
+                                        <span class="mod-switch">
+                                            <input type="checkbox" name="feedback_auto_webhook" <?php echo ($data['feedback_auto_webhook'] == '1') ? 'checked' : ''; ?>>
+                                            <span class="mod-switch-slider"></span>
+                                        </span>
+                                    </label>
+                                </div>
+                                
+                                <h3 class="ga-subsection-title">Тексты кнопок</h3>
+                                <div class="ga-input-grid-3">
+                                    <div class="ga-input-group">
+                                        <label class="ga-label">Кнопка #1</label>
+                                        <input type="text" name="feedback_positive_text" value="<?php echo h($data['feedback_positive_text']); ?>" class="ga-input">
+                                    </div>
+                                    <div class="ga-input-group">
+                                        <label class="ga-label">Кнопка #2</label>
+                                        <input type="text" name="feedback_negative_text" value="<?php echo h($data['feedback_negative_text']); ?>" class="ga-input">
+                                    </div>
+                                    <div class="ga-input-group">
+                                        <label class="ga-label">Кнопка #3</label>
+                                        <input type="text" name="feedback_neutral_text" value="<?php echo h($data['feedback_neutral_text']); ?>" class="ga-input">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="ga-form-actions">
+                                <button type="submit" class="btn btn-primary ga-btn-save">💾 Сохранить Feedback</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- TELEGRAM TAB -->
+                    <div class="ga-tab" id="tab-telegram">
+                        <div class="ga-section">
+                            <h2 class="ga-section-title">📬 Telegram Интеграция</h2>
+                            
+                            <div class="ga-info-box">
+                                <div class="ga-info-icon">ℹ️</div>
+                                <div class="ga-info-content">
+                                    <h4>Быстрые тесты</h4>
                                     <div class="ga-btnrow">
-                                        <a href="?module=<?php echo $MODULE_ID; ?>&action=test_tg" class="btn ga-btn">🧪 Test TG</a>
-                                        <a href="?module=<?php echo $MODULE_ID; ?>&action=test_ai" class="btn ga-btn">🧪 Test AI</a>
-                                        <a href="?module=<?php echo $MODULE_ID; ?>&action=test_run" class="btn ga-btn">🧪 Тестовый RUN</a>
-                                        <?php if (!$ga_is_bot_on): ?>
-                                            <a href="?module=<?php echo $MODULE_ID; ?>&action=start_now" class="btn ga-btn-strong">▶ START</a>
-                                        <?php else: ?>
-                                            <a href="?module=<?php echo $MODULE_ID; ?>&action=force_run" class="btn ga-btn-strong">⚡ RUN</a>
+                                        <a href="?module=<?php echo $MODULE_ID; ?>&action=test_tg" class="btn ga-btn-test">🧪 Test TG</a>
+                                        <a href="?module=<?php echo $MODULE_ID; ?>&action=test_ai" class="btn ga-btn-test">🧪 Test AI</a>
+                                        <a href="?module=<?php echo $MODULE_ID; ?>&action=test_run" class="btn ga-btn-test">🧪 Тестовый RUN</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LOGS TAB -->
+                    <div class="ga-tab" id="tab-logs">
+                        <div class="ga-section">
+                            <div class="ga-logs-header">
+                                <h2 class="ga-section-title">📋 Логи модуля</h2>
+                                <div class="ga-logs-actions">
+                                    <input type="text" id="ga_log_filter" placeholder="Фильтр логов..." class="ga-search-input">
+                                    <a href="?module=<?php echo $MODULE_ID; ?>&action=clear_logs" class="btn ga-btn-danger">🗑 Очистить</a>
+                                </div>
+                            </div>
+                            
+                            <div class="ga-logs-table-wrapper">
+                                <table class="ga-logs-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Время</th>
+                                            <th>Run ID</th>
+                                            <th>Система</th>
+                                            <th>Level</th>
+                                            <th>Статус</th>
+                                            <th>Сообщение</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="ga_log_rows">
+                                        <?php if (empty($modlogs)): ?>
+                                            <tr><td colspan="6" class="ga-empty">Нет записей логов</td></tr>
                                         <?php endif; ?>
-                                    </div>
+                                        <?php foreach ($modlogs as $l): ?>
+                                            <?php
+                                            $msgLimit = max(120, min(1000, (int) ($data['log_message_limit'] ?? 300)));
+                                            $previewLimit = min(260, $msgLimit);
+                                            $msg = (string) ($l['msg'] ?? '');
+                                            $metaStr = '';
+                                            if (!empty($l['meta']) && is_array($l['meta'])) {
+                                                $metaStr = ' | meta=' . json_encode($l['meta'], JSON_UNESCAPED_UNICODE);
+                                            }
+                                            $combined = $msg . $metaStr;
+                                            $combinedPreview = mb_substr($combined, 0, $previewLimit) . ((mb_strlen($combined) > $previewLimit) ? '...' : '');
+                                            $status = (string) ($l['status'] ?? '');
+                                            $chipClass = ($status === 'error') ? 'badge-error' : (($status === 'success') ? 'badge-success' : 'badge-warning');
+                                            ?>
+                                            <tr data-ga-log="<?php echo h(strtolower((string) ($l['time'] ?? '') . ' ' . ($l['run_id'] ?? '') . ' ' . ($l['type'] ?? '') . ' ' . ($l['level'] ?? '') . ' ' . ($l['status'] ?? '') . ' ' . $combined)); ?>">
+                                                <td class="ga-mono"><?php echo h($l['time'] ?? '--'); ?></td>
+                                                <td class="ga-mono ga-code"><?php echo h($l['run_id'] ?? '--'); ?></td>
+                                                <td><b><?php echo h($l['type'] ?? '--'); ?></b></td>
+                                                <td class="ga-mono ga-dim"><?php echo h(strtoupper($l['level'] ?? 'INFO')); ?></td>
+                                                <td><span class="ga-badge <?php echo $chipClass; ?>"><?php echo h(strtoupper($status ?: '--')); ?></span></td>
+                                                <td class="ga-mono ga-wrap"><?php echo h($combinedPreview); ?></td>
+                                            </tr>
+                                        <?php endforeach; ?>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- SNAPSHOTS TAB -->
+                    <div class="ga-tab" id="tab-snapshots">
+                        <div class="ga-section">
+                            <h2 class="ga-section-title">📸 Снапшоты данных</h2>
+                            
+                            <div class="ga-snapshot">
+                                <div class="ga-snapshot-header">
+                                    <h3>CommodityPriceAPI Response</h3>
+                                </div>
+                                <div class="ga-snapshot-content">
+                                    <pre><?php echo h(json_encode($data['last_raw_gold'], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)); ?></pre>
+                                </div>
+                            </div>
+                            
+                            <div class="ga-snapshot">
+                                <div class="ga-snapshot-header">
+                                    <h3>Gemini AI Parsed JSON</h3>
+                                </div>
+                                <div class="ga-snapshot-content">
+                                    <pre><?php echo h(json_encode($data['last_raw_ai'], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)); ?></pre>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <details class="ga-details ga-mt" open>
-                        <summary class="ga-summary">💬 Feedback-кнопки (Telegram)</summary>
-                        <div class="card ga-card">
-                            <div class="card-body ga-body">
-                                <div class="ga-grid2">
-                                    <div>
-                                        <label class="ga-inline"><input type="checkbox" name="feedback_buttons_enabled" <?php echo ($data['feedback_buttons_enabled'] == '1') ? 'checked' : ''; ?>>Включить inline-кнопки</label>
-                                        <label class="ga-inline"><input type="checkbox" name="feedback_include_test" <?php echo ($data['feedback_include_test'] == '1') ? 'checked' : ''; ?>>Показывать и в тестовом режиме</label>
-                                        <label class="ga-inline"><input type="checkbox" name="feedback_auto_webhook" <?php echo ($data['feedback_auto_webhook'] == '1') ? 'checked' : ''; ?>>Автонастройка webhook перед отправкой</label>
-                                        <label class="ga-inline"><input type="checkbox" name="feedback_show_counters" <?php echo ($data['feedback_show_counters'] == '1') ? 'checked' : ''; ?>>Счетчики на кнопках</label>
-                                        <label class="ga-inline"><input type="checkbox" name="feedback_force_https" <?php echo ($data['feedback_force_https'] == '1') ? 'checked' : ''; ?>>Принудительно HTTPS</label>
-                                    </div>
-                                    <div>
-                                        <label>Webhook Base URL (если прокси ломает авто-URL)</label>
-                                        <input type="text" name="feedback_webhook_base_url" value="<?php echo h($data['feedback_webhook_base_url']); ?>" placeholder="https://example.com/admin.php">
-                                        <div class="ga-btnrow ga-mt-sm">
-                                            <a href="?module=<?php echo $MODULE_ID; ?>&action=setup_feedback_webhook" class="btn ga-btn">⚙️ Переустановить webhook</a>
-                                            <a href="?module=<?php echo $MODULE_ID; ?>&action=check_feedback_webhook" class="btn ga-btn">🔎 Проверить webhook</a>
-                                            <a href="?module=<?php echo $MODULE_ID; ?>&action=clear_feedback_stats" class="btn ga-btn">♻ Очистить статистику</a>
-                                        </div>
-                                    </div>
+                    
+                    <!-- CRON TAB -->
+                    <div class="ga-tab" id="tab-cron">
+                        <div class="ga-section">
+                            <h2 class="ga-section-title">⏰ CRON Настройки</h2>
+                            
+                            <div class="ga-cron-card">
+                                <div class="ga-cron-header">
+                                    <h3>Основной CRON (мониторинг)</h3>
+                                    <span class="ga-cron-interval"><?php echo ($data['test_mode'] === '1') ? 'Раз в минуту' : 'Раз в 12 часов'; ?></span>
                                 </div>
-
-                                <div class="ga-grid3 ga-mt">
-                                    <div><label>Кнопка #1</label><input type="text" name="feedback_positive_text" value="<?php echo h($data['feedback_positive_text']); ?>"></div>
-                                    <div><label>Кнопка #2</label><input type="text" name="feedback_negative_text" value="<?php echo h($data['feedback_negative_text']); ?>"></div>
-                                    <div><label>Кнопка #3 (опц.)</label><input type="text" name="feedback_neutral_text" value="<?php echo h($data['feedback_neutral_text']); ?>"></div>
+                                <div class="ga-cron-command">
+                                    <code id="ga_cron_cmd">curl -L "<?php echo $CRON_URL; ?>"</code>
+                                    <button type="button" class="btn ga-btn-copy" data-ga-copy="#ga_cron_cmd">📋 Копировать</button>
                                 </div>
-
-                                <div class="ga-grid2 ga-mt-sm">
-                                    <div><label>🧠 Почему</label><input type="text" name="feedback_reasons_text" value="<?php echo h($data['feedback_reasons_text']); ?>"></div>
-                                    <div><label>⚠️ Риски</label><input type="text" name="feedback_risks_text" value="<?php echo h($data['feedback_risks_text']); ?>"></div>
-                                    <div><label>📊 Статистика</label><input type="text" name="feedback_stats_text" value="<?php echo h($data['feedback_stats_text']); ?>"></div>
-                                    <div><label>❓ Помощь</label><input type="text" name="feedback_help_text" value="<?php echo h($data['feedback_help_text']); ?>"></div>
+                            </div>
+                            
+                            <div class="ga-cron-card">
+                                <div class="ga-cron-header">
+                                    <h3>Feedback Worker (очередь)</h3>
+                                    <span class="ga-cron-interval">Раз в 1 минуту</span>
                                 </div>
-
-                                <div class="ga-grid2 ga-mt-sm">
-                                    <div><label>Support-кнопка</label><input type="text" name="feedback_support_text" value="<?php echo h($data['feedback_support_text']); ?>"></div>
-                                    <div><label>Support URL</label><input type="text" name="feedback_support_url" value="<?php echo h($data['feedback_support_url']); ?>" placeholder="https://t.me/..."></div>
+                                <div class="ga-cron-command">
+                                    <code id="ga_worker_cmd">curl -L "<?php echo $ga_worker_url; ?>"</code>
+                                    <button type="button" class="btn ga-btn-copy" data-ga-copy="#ga_worker_cmd">📋 Копировать</button>
                                 </div>
-
-                                <div class="ga-grid2 ga-mt-sm">
-                                    <div><label>Ответ после клика</label><input type="text" name="feedback_thanks_text" value="<?php echo h($data['feedback_thanks_text']); ?>"></div>
-                                    <div class="ga-box ga-box-compact">
-                                        <div class="ga-box-title">Webhook URL</div>
-                                        <div class="ga-code">
-                                            <code id="ga_feedback_url"><?php echo h($FEEDBACK_WEBHOOK_URL); ?></code>
-                                            <button type="button" class="btn ga-btn ga-copy" data-ga-copy="#ga_feedback_url">Скопировать</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="ga-grid2 ga-mt">
-                                    <div class="ga-box">
-                                        <div class="ga-box-title">📦 Экспорт для “Tunnel”</div>
-                                        <div class="ga-box-text ga-dim">Вставь это в модуле <b>tunnel</b> → импорт.</div>
-                                        <textarea id="ga_tunnel_export" readonly rows="3" class="ga-ta-mono"><?php echo h($GA_TUNNEL_EXPORT); ?></textarea>
-                                        <div class="ga-btnrow ga-mt-sm">
-                                            <button type="button" class="btn ga-btn ga-copy" data-ga-copy="#ga_tunnel_export">Скопировать экспорт</button>
-                                        </div>
-                                    </div>
-                                    <div class="ga-box">
-                                        <div class="ga-box-title">Token / лимиты</div>
-                                        <label class="ga-inline ga-warn"><input type="checkbox" name="regenerate_feedback_token" value="1">Сгенерировать новый feedback_token при сохранении</label>
-                                        <div class="ga-grid2 ga-mt-sm">
-                                            <div><label>Trace-записей</label><input type="number" min="50" max="5000" name="feedback_store_max_traces" value="<?php echo h($data['feedback_store_max_traces']); ?>"></div>
-                                            <div><label>Пользователей/trace</label><input type="number" min="100" max="20000" name="feedback_store_max_users" value="<?php echo h($data['feedback_store_max_users']); ?>"></div>
-                                        </div>
-                                    </div>
+                                <div class="ga-cron-hint">
+                                    Для shared-хостинга:<br>
+                                    <code id="ga_worker_cron">*/1 * * * * curl -L "<?php echo $ga_worker_url; ?>" > /dev/null 2>&1</code>
+                                    <button type="button" class="btn ga-btn-copy" data-ga-copy="#ga_worker_cron">📋 Копировать</button>
                                 </div>
                             </div>
                         </div>
-                    </details>
-
-                    <details class="ga-details ga-mt" open>
-                        <summary class="ga-summary">🧠 Gemini AI</summary>
-                        <div class="card ga-card">
-                            <div class="card-body ga-body">
-                                <div class="ga-grid2">
-                                    <div>
-                                        <label>Gemini API key</label>
-                                        <input type="password" name="gemini_key" value="<?php echo h($data['gemini_key']); ?>" placeholder="AIzaSy...">
-                                        <div class="ga-hint">Получить: <a href="https://aistudio.google.com/app/apikey" target="_blank">aistudio.google.com</a></div>
-                                    </div>
-                                    <div>
-                                        <label>Модель</label>
-                                        <select name="gemini_model" class="box-input">
-                                            <optgroup label="Актуальные модели">
-                                                <option value="gemini-2.5-flash" <?php echo ($data['gemini_model'] === 'gemini-2.5-flash') ? 'selected' : ''; ?>>gemini-2.5-flash (recommended)</option>
-                                                <option value="gemini-2.5-flash-lite" <?php echo ($data['gemini_model'] === 'gemini-2.5-flash-lite') ? 'selected' : ''; ?>>gemini-2.5-flash-lite</option>
-                                                <option value="gemini-flash-latest" <?php echo ($data['gemini_model'] === 'gemini-flash-latest') ? 'selected' : ''; ?>>gemini-flash-latest</option>
-                                                <option value="gemini-3-flash-preview" <?php echo ($data['gemini_model'] === 'gemini-3-flash-preview') ? 'selected' : ''; ?>>gemini-3-flash-preview</option>
-                                            </optgroup>
-                                            <optgroup label="Legacy">
-                                                <option value="gemini-2.0-flash" <?php echo ($data['gemini_model'] === 'gemini-2.0-flash') ? 'selected' : ''; ?>>gemini-2.0-flash</option>
-                                                <option value="gemini-2.0-flash-001" <?php echo ($data['gemini_model'] === 'gemini-2.0-flash-001') ? 'selected' : ''; ?>>gemini-2.0-flash-001</option>
-                                                <option value="gemini-1.5-pro" <?php echo ($data['gemini_model'] === 'gemini-1.5-pro') ? 'selected' : ''; ?>>gemini-1.5-pro</option>
-                                                <option value="gemini-1.5-flash" <?php echo ($data['gemini_model'] === 'gemini-1.5-flash') ? 'selected' : ''; ?>>gemini-1.5-flash</option>
-                                                <option value="gemini-1.5-flash-8b" <?php echo ($data['gemini_model'] === 'gemini-1.5-flash-8b') ? 'selected' : ''; ?>>gemini-1.5-flash-8b</option>
-                                            </optgroup>
-                                        </select>
-                                        <label class="ga-inline ga-mt-sm"><input type="checkbox" name="gemini_discover_models" <?php echo ($data['gemini_discover_models'] == '1') ? 'checked' : ''; ?>>Автоопределение моделей (ListModels)</label>
-                                    </div>
-                                </div>
-
-                                <div class="ga-grid2 ga-mt-sm">
-                                    <div><label>API версии (csv)</label><input type="text" name="gemini_api_versions" value="<?php echo h($data['gemini_api_versions']); ?>" placeholder="v1beta,v1"></div>
-                                    <div><label>Fallback модели (csv)</label><textarea name="gemini_fallback_models" rows="2" class="ga-ta"><?php echo h($data['gemini_fallback_models']); ?></textarea></div>
-                                </div>
-
-                                <div class="ga-help ga-mt-sm">
-                                    Если видишь <code>FAILED_PRECONDITION: User location is not supported</code> — включай Bridge (прокси) ниже.
-                                </div>
-
-                                <div class="ga-grid2 ga-mt">
-                                    <div class="ga-box">
-                                        <div class="ga-box-title">🌍 AI Proxy Bridge</div>
-                                        <label class="ga-inline"><input type="checkbox" name="use_bridge" value="1" <?php echo ($data['use_bridge'] == '1') ? 'checked' : ''; ?>>Использовать внешний прокси-сервер</label>
-                                        <label class="ga-mt-sm">Bridge URL</label>
-                                        <input type="text" name="bridge_url" value="<?php echo h($data['bridge_url']); ?>" placeholder="https://remote-site.com/admin.php?module=ai-bridge&action=api_proxy">
-                                        <label class="ga-mt-sm">Bridge secret</label>
-                                        <input type="text" name="bridge_secret" value="<?php echo h($data['bridge_secret']); ?>" placeholder="Секрет из Bridge">
-                                        <div class="ga-hint ga-mt-sm">IP этого сервера: <b><?php echo $_SERVER['SERVER_ADDR'] ?? 'не определен'; ?></b></div>
-                                    </div>
-                                    <div class="ga-box">
-                                        <div class="ga-box-title">⏱ Таймауты / SSL</div>
-                                        <div class="ga-grid2">
-                                            <div><label>Connect timeout</label><input type="number" min="3" max="60" name="curl_connect_timeout" value="<?php echo h($data['curl_connect_timeout']); ?>"></div>
-                                            <div><label>Price API timeout</label><input type="number" min="5" max="120" name="gold_timeout" value="<?php echo h($data['gold_timeout']); ?>"></div>
-                                            <div><label>AI timeout</label><input type="number" min="5" max="180" name="ai_timeout" value="<?php echo h($data['ai_timeout']); ?>"></div>
-                                            <div><label>Telegram timeout</label><input type="number" min="5" max="120" name="tg_timeout" value="<?php echo h($data['tg_timeout']); ?>"></div>
-                                        </div>
-                                        <div class="ga-grid2 ga-mt-sm">
-                                            <div><label>ListModels timeout</label><input type="number" min="5" max="90" name="gemini_discovery_timeout" value="<?php echo h($data['gemini_discovery_timeout']); ?>"></div>
-                                            <div class="ga-flex-end"><label class="ga-inline"><input type="checkbox" name="curl_ssl_verify" <?php echo ($data['curl_ssl_verify'] == '1') ? 'checked' : ''; ?>>Проверять SSL</label></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </details>
-
-                    <details class="ga-details ga-mt">
-                        <summary class="ga-summary">🧾 Логирование</summary>
-                        <div class="card ga-card">
-                            <div class="card-body ga-body">
-                                <div class="ga-grid2">
-                                    <div>
-                                        <label class="ga-inline"><input type="checkbox" name="logging_enabled" <?php echo ($data['logging_enabled'] == '1') ? 'checked' : ''; ?>>Включить журналирование</label>
-                                        <label class="ga-inline"><input type="checkbox" name="log_success_requests" <?php echo ($data['log_success_requests'] == '1') ? 'checked' : ''; ?>>Логировать успехи</label>
-                                        <label class="ga-inline"><input type="checkbox" name="log_include_http_body" <?php echo ($data['log_include_http_body'] == '1') ? 'checked' : ''; ?>>Включать raw HTTP body</label>
-                                    </div>
-                                    <div class="ga-grid2">
-                                        <div>
-                                            <label>Уровень логов</label>
-                                            <select name="log_level" class="box-input">
-                                                <option value="error" <?php echo ($data['log_level'] === 'error') ? 'selected' : ''; ?>>error</option>
-                                                <option value="warning" <?php echo ($data['log_level'] === 'warning') ? 'selected' : ''; ?>>warning</option>
-                                                <option value="info" <?php echo ($data['log_level'] === 'info') ? 'selected' : ''; ?>>info</option>
-                                                <option value="debug" <?php echo ($data['log_level'] === 'debug') ? 'selected' : ''; ?>>debug</option>
-                                                <option value="trace" <?php echo ($data['log_level'] === 'trace') ? 'selected' : ''; ?>>trace</option>
-                                            </select>
-                                        </div>
-                                        <div><label>Максимум записей</label><input type="number" min="50" max="5000" name="log_max_entries" value="<?php echo h($data['log_max_entries']); ?>"></div>
-                                        <div><label>Лимит сообщения</label><input type="number" min="200" max="20000" name="log_message_limit" value="<?php echo h($data['log_message_limit']); ?>"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </details>
-
-                    <details class="ga-details ga-mt" open>
-                        <summary class="ga-summary">🧩 Prompt / Threshold</summary>
-                        <div class="card ga-card">
-                            <div class="card-body ga-body">
-                                <div class="ga-grid2">
-                                    <div>
-                                        <label>Threshold (0..100)</label>
-                                        <input type="number" name="threshold" value="<?php echo h($data['threshold']); ?>" min="0" max="100">
-                                        <div class="ga-hint">В рабочем режиме отправка в Telegram только если <code>importance ≥ threshold</code>.</div>
-                                    </div>
-                                    <div class="ga-help">
-                                        Промпт должен требовать строгий JSON и содержать <code>telegram_message</code>.
-                                    </div>
-                                </div>
-                                <label class="ga-mt-sm">Системный промпт</label>
-                                <textarea name="prompt" rows="8" class="ga-ta"><?php echo h($data['prompt']); ?></textarea>
-                            </div>
-                        </div>
-                    </details>
-
-                    <details class="ga-details ga-mt">
-                        <summary class="ga-summary">💅 Виджет на сайте (CSS/JS)</summary>
-                        <div class="card ga-card">
-                            <div class="card-body ga-body">
-                                <label>CSS</label>
-                                <textarea name="module_css" rows="5" class="ga-ta-mono"><?php echo h($data['module_css']); ?></textarea>
-                                <label class="ga-mt-sm">JS</label>
-                                <textarea name="module_js" rows="2" class="ga-ta-mono"><?php echo h($data['module_js']); ?></textarea>
-                            </div>
-                        </div>
-                    </details>
-
-                    <div class="ga-savebar">
-                        <button class="btn btn-primary ga-btn-strong" type="submit">💾 Сохранить настройки</button>
-                    </div>
-                </form>
-            </div>
-
-            <div class="ga-side">
-                <div class="card ga-card ga-mt">
-                    <div class="card-head ga-head">📡 Снапшоты</div>
-                    <div class="card-body ga-body">
-                        <details class="ga-details" open>
-                            <summary class="ga-summary">CommodityPriceAPI response</summary>
-                            <div class="ga-pre"><pre><?php echo h(json_encode($data['last_raw_gold'], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)); ?></pre></div>
-                        </details>
-                        <details class="ga-details">
-                            <summary class="ga-summary">Gemini AI parsed JSON</summary>
-                            <div class="ga-pre"><pre><?php echo h(json_encode($data['last_raw_ai'], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)); ?></pre></div>
-                        </details>
-                    </div>
-                </div>
-
-                <div class="card ga-card ga-mt">
-                    <div class="card-head ga-head">📋 Логи</div>
-                    <div class="card-body ga-body">
-                        <div class="ga-grid2 ga-mb-sm">
-                            <input id="ga_log_filter" type="text" placeholder="Фильтр (run id / текст / статус)..." class="ga-input">
-                            <div class="ga-flex-end">
-                                <a href="?module=<?php echo $MODULE_ID; ?>&action=clear_logs" class="btn ga-btn">🗑 Очистить</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ga-logtable">
-                        <table class="ga-table">
-                            <thead>
-                                <tr>
-                                    <th>Время</th>
-                                    <th>Run ID</th>
-                                    <th>Система</th>
-                                    <th>Level</th>
-                                    <th>Статус</th>
-                                    <th>Сообщение</th>
-                                </tr>
-                            </thead>
-                            <tbody id="ga_log_rows">
-                                <?php if (empty($modlogs)): ?>
-                                    <tr><td colspan="6" class="ga-center ga-dim">Нет записей. Запусти <b>Тестовый RUN</b>.</td></tr>
-                                <?php endif; ?>
-                                <?php foreach ($modlogs as $l): ?>
-                                    <?php
-                                    $msgLimit = max(120, min(1000, (int) ($data['log_message_limit'] ?? 300)));
-                                    $previewLimit = min(260, $msgLimit);
-                                    $msg = (string) ($l['msg'] ?? '');
-                                    $metaStr = '';
-                                    if (!empty($l['meta']) && is_array($l['meta'])) {
-                                        $metaStr = ' | meta=' . json_encode($l['meta'], JSON_UNESCAPED_UNICODE);
-                                    }
-                                    $combined = $msg . $metaStr;
-                                    $combinedPreview = ga_mb_substr($combined, 0, $previewLimit) . ((ga_mb_strlen($combined) > $previewLimit) ? '...' : '');
-                                    $status = (string) ($l['status'] ?? '');
-                                    $chipClass = ($status === 'error') ? 'bad' : (($status === 'success') ? 'ok' : 'warn');
-                                    ?>
-                                    <tr data-ga-log="<?php echo h(strtolower((string) ($l['time'] ?? '') . ' ' . ($l['run_id'] ?? '') . ' ' . ($l['type'] ?? '') . ' ' . ($l['level'] ?? '') . ' ' . ($l['status'] ?? '') . ' ' . $combined)); ?>">
-                                        <td class="ga-dim"><?php echo h($l['time'] ?? '--'); ?></td>
-                                        <td class="ga-mono"><?php echo h($l['run_id'] ?? '--'); ?></td>
-                                        <td><b><?php echo h($l['type'] ?? '--'); ?></b></td>
-                                        <td class="ga-mono ga-dim"><?php echo h(strtoupper($l['level'] ?? 'INFO')); ?></td>
-                                        <td><span class="ga-chip <?php echo $chipClass; ?>"><?php echo h(strtoupper($status ?: '--')); ?></span></td>
-                                        <td class="ga-mono ga-wrap"><?php echo h($combinedPreview); ?></td>
-                                    </tr>
-                                <?php endforeach; ?>
-                            </tbody>
-                        </table>
                     </div>
                 </div>
-            </div>
+            </main>
         </div>
     </div>
-
-    <script>
-        (function () {
-            function gaGetText(selector) {
-                var el = document.querySelector(selector);
-                if (!el) return '';
-                if (el.tagName === 'TEXTAREA' || el.tagName === 'INPUT') return (el.value || '').trim();
-                return (el.textContent || '').trim();
-            }
-
-            function gaCopy(text) {
-                if (!text) return;
-                if (navigator.clipboard && navigator.clipboard.writeText) {
-                    navigator.clipboard.writeText(text).catch(function () {});
-                    return;
-                }
-                var ta = document.createElement('textarea');
-                ta.value = text;
-                ta.setAttribute('readonly', 'readonly');
-                ta.style.position = 'absolute';
-                ta.style.left = '-9999px';
-                document.body.appendChild(ta);
-                ta.select();
-                try { document.execCommand('copy'); } catch (e) {}
-                document.body.removeChild(ta);
-            }
-
-            document.addEventListener('click', function (e) {
-                var btn = e.target && e.target.closest ? e.target.closest('[data-ga-copy]') : null;
-                if (!btn) return;
-                var sel = btn.getAttribute('data-ga-copy');
-                gaCopy(gaGetText(sel));
-                btn.classList.add('is-copied');
-                setTimeout(function(){ btn.classList.remove('is-copied'); }, 900);
-            });
-
-            var filter = document.getElementById('ga_log_filter');
-            var rows = document.querySelectorAll('#ga_log_rows tr[data-ga-log]');
-            if (filter && rows && rows.length) {
-                filter.addEventListener('input', function () {
-                    var q = (filter.value || '').toLowerCase().trim();
-                    rows.forEach(function (tr) {
-                        var hay = (tr.getAttribute('data-ga-log') || '');
-                        tr.style.display = (!q || hay.indexOf(q) !== -1) ? '' : 'none';
-                    });
-                });
-            }
-        })();
-    </script>
-
-    <style>
-        /* === SIMPLIFIED CLEAN UI === */
-        .ga-admin { 
-            --ga-bg: #ffffff; 
-            --ga-bg-alt: #f8f9fa;
-            --ga-border: #e0e0e0; 
-            --ga-text: #212529;
-            --ga-text-dim: #6c757d; 
-            --ga-gold: #d4af37; 
-            --ga-blue: #0d6efd; 
-            --ga-red: #dc3545; 
-            --ga-green: #198754;
-            --ga-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        }
-        
-        .ga-title { font-size: 20px; font-weight: 700; color: var(--ga-text); margin-bottom: 8px; }
-        .ga-chips { margin-top: 8px; display:flex; flex-wrap: wrap; gap: 6px; }
-        .ga-actions { display:flex; gap: 8px; flex-wrap: wrap; align-items:center; }
-        .ga-topbar { display:flex; align-items:center; justify-content:space-between; gap: 16px; flex-wrap: wrap; padding-bottom: 16px; border-bottom: 1px solid var(--ga-border); margin-bottom: 20px; }
-        
-        .ga-btn { 
-            background:#fff; 
-            color:var(--ga-text); 
-            border: 1px solid var(--ga-border); 
-            padding: 8px 16px;
-            border-radius: 6px;
-            font-size: 14px;
-            cursor: pointer;
-            transition: all 0.2s;
-            text-decoration: none;
-            display: inline-block;
-        }
-        .ga-btn:hover { background:#f8f9fa; border-color: #adb5bd; }
-        .ga-btn-strong { 
-            background: var(--ga-gold) !important; 
-            color:#000 !important; 
-            border-color: #b89628 !important; 
-            font-weight: 600; 
-        }
-        .ga-btn-strong:hover { background: #e5c145 !important; }
-        .ga-btn-ghost { opacity: .8; background: transparent; }
-        .ga-btn-primary { background: var(--ga-blue); color: #fff; border-color: var(--ga-blue); }
-        .ga-btn-primary:hover { background: #0b5ed7; }
-        
-        .ga-chip { 
-            display:inline-flex; 
-            align-items:center; 
-            gap:6px; 
-            padding: 4px 10px; 
-            border-radius: 20px; 
-            font-size: 12px; 
-            font-weight: 500;
-            background: var(--ga-bg-alt);
-            border: 1px solid var(--ga-border);
-        }
-        .ga-chip.ok { background: #d1e7dd; border-color: #badbcc; color: #0f5132; }
-        .ga-chip.warn { background: #fff3cd; border-color: #ffecb5; color: #664d03; }
-        .ga-chip.bad { background: #f8d7da; border-color: #f5c2c7; color: #842029; }
-        .ga-chip.muted { opacity: 0.6; }
-
-        .ga-card { 
-            background: var(--ga-bg); 
-            border: 1px solid var(--ga-border); 
-            border-radius: 8px; 
-            overflow: hidden;
-            box-shadow: var(--ga-shadow);
-            margin-bottom: 16px;
-        }
-        .ga-head { 
-            padding: 14px 16px; 
-            background: var(--ga-bg-alt); 
-            border-bottom: 1px solid var(--ga-border);
-            font-weight: 600;
-            font-size: 15px;
-            color: var(--ga-text);
-        }
-        .ga-body { padding: 16px; background: var(--ga-bg); }
-
-        .ga-layout { display:flex; gap: 20px; flex-wrap: wrap; margin-top: 20px; }
-        .ga-side { flex: 1; min-width: 380px; }
-        .ga-form { flex: 2; min-width: 320px; }
-        @media (max-width: 980px) { 
-            .ga-side, .ga-form { min-width: 100%; }
-            .ga-layout { flex-direction: column; }
-        }
-
-        .ga-grid2 { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-        .ga-grid3 { display:grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
-        @media (max-width: 768px) { 
-            .ga-grid2, .ga-grid3 { grid-template-columns: 1fr; } 
-        }
-
-        .ga-box { 
-            border: 1px solid var(--ga-border); 
-            border-radius: 8px; 
-            padding: 14px; 
-            background: var(--ga-bg-alt); 
-        }
-        .ga-box-compact { padding: 12px; }
-        .ga-box-title { font-weight: 600; margin-bottom: 8px; color: var(--ga-text); font-size: 14px; }
-        .ga-box-text { font-size: 13px; line-height: 1.6; color: var(--ga-text-dim); }
-        .ga-dim { color: var(--ga-text-dim); }
-        .ga-ok { color: var(--ga-green); }
-        .ga-warn { color: #ffc107; }
-        .ga-mono { font-family: "SF Mono", "Fira Code", Consolas, monospace; font-size: 13px; }
-        .ga-wrap { word-break: break-word; }
-        .ga-center { text-align:center; }
-
-        .ga-hint { margin-top: 6px; font-size: 12px; color: var(--ga-text-dim); font-style: italic; }
-        .ga-help { 
-            padding: 12px 14px; 
-            border-radius: 8px; 
-            background: #e7f5ff; 
-            border: 1px solid #bee5eb; 
-            color: #0c5460; 
-            font-size: 13px; 
-            line-height: 1.5; 
-        }
-        
-        .ga-toggle { 
-            display:flex; 
-            align-items:center; 
-            justify-content:space-between; 
-            gap: 12px; 
-            padding: 12px 14px; 
-            border: 1px solid var(--ga-border); 
-            border-radius: 8px; 
-            background: var(--ga-bg);
-            font-weight: 500;
-            margin-bottom: 8px;
-        }
-        .ga-toggle:hover { background: var(--ga-bg-alt); }
-        .ga-inline { display:flex; gap:12px; align-items:center; margin-top: 8px; font-weight: 500; color: var(--ga-text); flex-wrap: wrap; }
-        .ga-inline input[type="checkbox"] { width:auto; margin:0; }
-
-        .ga-summary { 
-            cursor:pointer; 
-            padding: 12px 0; 
-            font-weight: 600; 
-            color: var(--ga-gold);
-            border: none;
-            background: none;
-            width: 100%;
-            text-align: left;
-            font-size: 15px;
-        }
-        .ga-summary::-webkit-details-marker { display:none; }
-        .ga-summary:hover { color: #b89628; }
-
-        .ga-ta { width: 100%; }
-        .ga-ta-mono { 
-            width: 100%; 
-            font-family: "SF Mono", "Fira Code", Consolas, monospace; 
-            font-size: 13px; 
-            background: #f8f9fa; 
-            border: 1px solid var(--ga-border); 
-            color: var(--ga-text); 
-            border-radius: 6px; 
-            padding: 12px; 
-            box-sizing: border-box;
-        }
-        .ga-input { width: 100%; border-radius: 6px; padding: 10px; border: 1px solid var(--ga-border); font-size: 14px; box-sizing: border-box; }
-        .ga-inlinecode { 
-            display:inline-block; 
-            font-family: "SF Mono", "Fira Code", Consolas, monospace; 
-            background: #f8f9fa; 
-            border: 1px solid var(--ga-border); 
-            padding: 6px 10px; 
-            border-radius: 6px; 
-            color: #d63384; 
-            font-size: 13px;
-        }
-        .ga-code { display:flex; gap: 8px; align-items:center; margin-top: 8px; flex-wrap: wrap; }
-        .ga-code code { 
-            display:block; 
-            flex:1; 
-            min-width: 260px; 
-            background:#f8f9fa; 
-            border:1px solid var(--ga-border); 
-            border-radius: 6px; 
-            padding: 12px; 
-            color:var(--ga-text); 
-            font-family: "SF Mono", "Fira Code", Consolas, monospace; 
-            font-size: 13px; 
-            word-break: break-all;
-            box-sizing: border-box;
-        }
-        .ga-copy.is-copied { border-color: var(--ga-green) !important; background: #d1e7dd; }
-
-        .ga-btnrow { display:flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
-        .ga-flex-end { display:flex; justify-content:flex-end; align-items:center; }
-        .ga-savebar { position: sticky; bottom: 12px; z-index: 5; display:flex; justify-content:flex-end; padding: 12px 0; background: var(--ga-bg); }
-
-        .ga-pre { 
-            background: #f8f9fa; 
-            border: 1px solid var(--ga-border); 
-            border-radius: 6px; 
-            padding: 12px; 
-            overflow:auto; 
-            max-height: 200px; 
-        }
-        .ga-pre pre { margin:0; font-size: 12px; color:var(--ga-text-dim); }
-
-        .ga-logtable { padding: 0; overflow:auto; max-height: 500px; border-top: 1px solid var(--ga-border); }
-        .ga-table { width: 100%; font-size: 13px; border-collapse: collapse; }
-        .ga-table thead th { 
-            position: sticky; 
-            top: 0; 
-            background: var(--ga-bg-alt); 
-            border-bottom: 2px solid var(--ga-border); 
-            padding: 12px; 
-            text-align:left; 
-            font-weight: 600;
-            color: var(--ga-text);
-        }
-        .ga-table td { border-bottom: 1px solid var(--ga-border); padding: 12px; vertical-align: top; }
-        .ga-table tr:hover td { background: #f8f9fa; }
-
-        .ga-mt { margin-top: 16px; }
-        .ga-mt-sm { margin-top: 8px; }
-        .ga-mb-sm { margin-bottom: 10px; }
-        .ga-ml { margin-left: 8px; }
-        
-        a[target="_blank"] { color: var(--ga-blue); text-decoration: none; }
-        a[target="_blank"]:hover { text-decoration: underline; }
-        
-        /* Form elements */
-        .ga-label { display: block; font-weight: 500; margin-bottom: 6px; color: var(--ga-text); font-size: 14px; }
-        .ga-field { margin-bottom: 14px; }
-    </style>
-<?php else: ?>
-
-<!-- LEGACY UI (append ?legacy_ui=1 to show) -->
-<div class="panel-header" style="flex-wrap: wrap;">
-    <h1>Управление XAU Мониторингом 🪙</h1>
-    <div class="panel-actions" style="display:flex; gap: 10px;">
-        <span class="status-badge" style="border:1px solid #d4af37; color:#d4af37;">CRON Target:
-            /admin.php?module=gold-analyzer</span>
-        <?php if (($data['bot_active'] ?? '0') !== '1'): ?>
-            <a href="?module=<?php echo $MODULE_ID; ?>&action=start_now" class="btn btn-primary"
-                style="background:#d4af37;color:#000;">▶ ЗАПУСТИТЬ СЕЙЧАС</a>
-        <?php else: ?>
-            <a href="?module=<?php echo $MODULE_ID; ?>&action=force_run" class="btn btn-primary"
-                style="background:#d4af37;color:#000;">⚡ RUN СЕЙЧАС</a>
-        <?php endif; ?>
-        <a href="?module=<?php echo $MODULE_ID; ?>&action=test_run" class="btn"
-            style="background:#0ea5e9;color:#001018;">🧪 ТЕСТОВЫЙ RUN</a>
-        <a href="?module=<?php echo $MODULE_ID; ?>&action=clear_logs" class="btn"
-            style="background:#30363d;color:#fff;">🗑 Очистить логи</a>
-        <a href="?module=<?php echo $MODULE_ID; ?>&action=clear_feedback_stats" class="btn"
-            style="background:#3b2f2f;color:#fff;">♻ Очистить feedback-статистику</a>
-    </div>
-</div>
-
-<div class="card" style="background: rgba(212, 175, 55, 0.05); border: 1px dashed #d4af37;">
-    <div class="card-head">CRON Расписание Автоматизации (Linux Server/cPanel)</div>
-    <div class="card-body">
-        <p style="color:var(--text-dim); margin-top:0;">
-            <?php echo ($data['test_mode'] === '1') ? '<b style="color:#f48771">ТЕСТОВЫЙ РЕЖИМ:</b> Выставьте интервал "Раз в минуту" в вашей панели.' : '<b>РАБОЧИЙ РЕЖИМ:</b> Выставьте интервал "Раз в 12 часов" в вашей панели.'; ?>
-            <br>Вставьте команду ниже в поле "Command" или "Команда":
-        </p>
-        <code
-            style="color: #89d185; display:block; padding:10px; background:#181818; word-break:break-all; user-select:all;">
-           curl -L "<?php echo $CRON_URL; ?>"
-        </code>
-    </div>
-</div>
-
-<div class="card" style="background: rgba(56, 189, 248, 0.05); border: 1px dashed #0ea5e9; margin-top: 20px;">
-    <div class="card-head" style="border-left-color: #0ea5e9;">⚙️ Очередь обратной связи (Feedback Worker)</div>
-    <div class="card-body">
-        <p style="color:var(--text-dim); margin-top:0;">Для мгновенного отклика кнопок настройте второй Cron (раз в 1 минуту):</p>
-        <code style="color: #38bdf8; display:block; padding:10px; background:#181818; word-break:break-all; user-select:all;">
-           curl -L "<?php echo ga_build_module_url($MODULE_ID, ['action' => 'run_worker', 'cron_token' => $data['cron_token']]); ?>"
-        </code>
-        <p style="color:#aaa; margin-top:10px">
-            <b>Важно (Очередь):</b> На shared-хостинге настройте cron-задачу для обработки очереди обратной связи (раз в 1 минуту):<br>
-            <code style="background:#111; padding:5px; color:#89d185;">*/1 * * * * curl -L "<?php echo ga_build_module_url($MODULE_ID, ['action' => 'run_worker', 'cron_token' => $data['cron_token']]); ?>" > /dev/null 2>&1</code>
-        </p>
-    </div>
-</div>
-
-<div class="row" style="flex-wrap:wrap">
-
-    <div class="col" style="flex:1; min-width: 300px;">
-        <form method="POST" class="app-form">
-            <input type="hidden" name="action" value="save_configs">
-            <div class="card">
-                <div class="card-head">🔑 Основные настройки и доступ</div>
-                <div class="card-body"
-                    style="background: rgba(255,255,255,0.03); margin-bottom:15px; border-radius:8px; padding:15px;">
-                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:15px;">
-                        <div style="background:#000; padding:12px; border-radius:10px; border:1px solid #333; display:flex; justify-content:space-between; align-items:center;">
-                            <span style="font-weight:700; color:<?php echo ($data['bot_active'] == '1') ? '#89d185' : '#f48771'; ?>;">
-                                <?php echo ($data['bot_active'] == '1') ? '🚦 СИСТЕМА ON' : '🚦 СИСТЕМА OFF'; ?>
-                            </span>
-                            <span class="mod-switch">
-                                <input type="checkbox" name="bot_active" value="1" <?php echo ($data['bot_active'] == '1') ? 'checked' : ''; ?>>
-                                <span class="mod-switch-slider"></span>
-                            </span>
-                        </div>
-                        <div style="background:#000; padding:12px; border-radius:10px; border:1px solid #333; display:flex; justify-content:space-between; align-items:center;">
-                            <span style="font-weight:700; color:#f48771;">🧪 ТЕСТОВЫЙ РЕЖИМ</span>
-                            <span class="mod-switch">
-                                <input type="checkbox" name="test_mode" value="1" <?php echo ($data['test_mode'] == '1') ? 'checked' : ''; ?>>
-                                <span class="mod-switch-slider"></span>
-                            </span>
-                        </div>
-                    </div>
-                    <div style="background:#000; padding:12px; border-radius:10px; border:1px solid #333; display:flex; justify-content:space-between; align-items:center; margin-top:10px;">
-                        <span style="font-weight:700; color:#fff;">✨ ИСПОЛЬЗОВАТЬ GEMINI AI</span>
-                        <span class="mod-switch">
-                            <input type="checkbox" name="use_ai" value="1" <?php echo ($data['use_ai'] == '1') ? 'checked' : ''; ?>>
-                            <span class="mod-switch-slider"></span>
-                        </span>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <label>CommodityPriceAPI ключ доступа:</label>
-                    <input type="password" name="goldapi_key" value="<?php echo h($data['goldapi_key']); ?>"
-                        placeholder="e16ce0ea-c213-...">
-
-                    <label>Telegram БОТ Токен:</label>
-                    <input type="password" name="tg_token" value="<?php echo h($data['tg_token']); ?>">
-
-                    <label>ID Канала или Группы (начинается на -100):</label>
-                    <input type="text" name="tg_chat_id" value="<?php echo h($data['tg_chat_id']); ?>">
-                    <a href="?module=<?php echo $MODULE_ID; ?>&action=test_tg" class="btn"
-                        style="background:#0088cc; color:#fff; display:inline-block; margin-top:5px; padding: 5px 15px; font-size:12px; border-radius:4px; text-decoration:none;">🧪
-                        Проверить TG (Test)</a>
-                    <div style="margin-top:12px; padding:10px; background:#111; border:1px solid #2f2f2f; border-radius:6px;">
-                        <div style="font-weight:700; color:#d4af37; margin-bottom:8px;">Feedback кнопки Telegram</div>
-                        <label style="display:flex; gap:10px; align-items:center; color:#fff;">
-                            <input type="checkbox" name="feedback_buttons_enabled" <?php echo ($data['feedback_buttons_enabled'] == '1') ? 'checked' : ''; ?>
-                                style="width:auto;margin:0;">
-                            Включить inline-кнопки обратной связи под постом
-                        </label>
-                        <label style="display:flex; gap:10px; align-items:center; color:#fff; margin-top:6px;">
-                            <input type="checkbox" name="feedback_include_test" <?php echo ($data['feedback_include_test'] == '1') ? 'checked' : ''; ?>
-                                style="width:auto;margin:0;">
-                            Показывать кнопки и в тестовом режиме
-                        </label>
-                        <label style="display:flex; gap:10px; align-items:center; color:#fff; margin-top:6px;">
-                            <input type="checkbox" name="feedback_auto_webhook" <?php echo ($data['feedback_auto_webhook'] == '1') ? 'checked' : ''; ?>
-                                style="width:auto;margin:0;">
-                            Автонастройка webhook перед отправкой (рекомендуется)
-                        </label>
-                        <label style="display:flex; gap:10px; align-items:center; color:#fff; margin-top:6px;">
-                            <input type="checkbox" name="feedback_show_counters" <?php echo ($data['feedback_show_counters'] == '1') ? 'checked' : ''; ?>
-                                style="width:auto;margin:0;">
-                            Показывать счетчики на кнопках (👍 12, 👎 3, и т.д.)
-                        </label>
-                        <label style="display:flex; gap:10px; align-items:center; color:#fff; margin-top:6px;">
-                            <input type="checkbox" name="feedback_force_https" <?php echo ($data['feedback_force_https'] == '1') ? 'checked' : ''; ?>
-                                style="width:auto;margin:0;">
-                            Принудительно использовать HTTPS для webhook URL
-                        </label>
-                        <div style="margin-top:8px;">
-                            <small style="display:block;color:#aaa;">Webhook Base URL (если прокси/Cloudflare ломает авто-URL)</small>
-                            <input type="text" name="feedback_webhook_base_url"
-                                value="<?php echo h($data['feedback_webhook_base_url']); ?>" placeholder="https://example.com/admin.php">
-                        </div>
-                        <a href="?module=<?php echo $MODULE_ID; ?>&action=setup_feedback_webhook" class="btn"
-                            style="background:#334155; color:#fff; display:inline-block; margin-top:8px; padding: 5px 12px; font-size:12px; border-radius:4px; text-decoration:none;">⚙️
-                            Переустановить Feedback Webhook</a>
-                        <a href="?module=<?php echo $MODULE_ID; ?>&action=check_feedback_webhook" class="btn"
-                            style="background:#1f2937; color:#fff; display:inline-block; margin-top:8px; margin-left:6px; padding: 5px 12px; font-size:12px; border-radius:4px; text-decoration:none;">🔎
-                            Проверить Feedback Webhook</a>
-
-                        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:8px; margin-top:8px;">
-                            <div>
-                                <small style="display:block;color:#aaa;">Текст кнопки #1</small>
-                                <input type="text" name="feedback_positive_text"
-                                    value="<?php echo h($data['feedback_positive_text']); ?>" placeholder="👍 Полезно">
-                            </div>
-                            <div>
-                                <small style="display:block;color:#aaa;">Текст кнопки #2</small>
-                                <input type="text" name="feedback_negative_text"
-                                    value="<?php echo h($data['feedback_negative_text']); ?>" placeholder="👎 Мимо">
-                            </div>
-                        </div>
-                        <div style="margin-top:8px;">
-                            <small style="display:block;color:#aaa;">Текст кнопки #3 (опционально)</small>
-                            <input type="text" name="feedback_neutral_text"
-                                value="<?php echo h($data['feedback_neutral_text']); ?>" placeholder="🤔 Нужны детали">
-                        </div>
-
-                        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:8px; margin-top:8px;">
-                            <div>
-                                <small style="display:block;color:#aaa;">Кнопка "Почему"</small>
-                                <input type="text" name="feedback_reasons_text"
-                                    value="<?php echo h($data['feedback_reasons_text']); ?>" placeholder="🧠 Почему">
-                            </div>
-                            <div>
-                                <small style="display:block;color:#aaa;">Кнопка "Риски"</small>
-                                <input type="text" name="feedback_risks_text"
-                                    value="<?php echo h($data['feedback_risks_text']); ?>" placeholder="⚠️ Риски">
-                            </div>
-                        </div>
-                        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:8px; margin-top:8px;">
-                            <div>
-                                <small style="display:block;color:#aaa;">Кнопка "Статистика"</small>
-                                <input type="text" name="feedback_stats_text"
-                                    value="<?php echo h($data['feedback_stats_text']); ?>" placeholder="📊 Статистика">
-                            </div>
-                            <div>
-                                <small style="display:block;color:#aaa;">Кнопка "Помощь"</small>
-                                <input type="text" name="feedback_help_text"
-                                    value="<?php echo h($data['feedback_help_text']); ?>" placeholder="❓ Помощь">
-                            </div>
-                        </div>
-
-                        <div style="display:grid; grid-template-columns: 1fr 2fr; gap:8px; margin-top:8px;">
-                            <div>
-                                <small style="display:block;color:#aaa;">Текст support-кнопки</small>
-                                <input type="text" name="feedback_support_text"
-                                    value="<?php echo h($data['feedback_support_text']); ?>" placeholder="💬 Связаться">
-                            </div>
-                            <div>
-                                <small style="display:block;color:#aaa;">Support URL (https://...)</small>
-                                <input type="text" name="feedback_support_url"
-                                    value="<?php echo h($data['feedback_support_url']); ?>" placeholder="https://t.me/your_support_chat">
-                            </div>
-                        </div>
-
-                        <div style="margin-top:8px;">
-                            <small style="display:block;color:#aaa;">Ответ пользователю после клика</small>
-                            <input type="text" name="feedback_thanks_text"
-                                value="<?php echo h($data['feedback_thanks_text']); ?>" placeholder="Спасибо за обратную связь!">
-                        </div>
-
-                        <div style="margin-top:10px; font-size:12px; color:#aaa;">Webhook для обработки кликов callback_query:</div>
-                        <code
-                            style="color:#89d185; display:block; padding:8px; background:#181818; word-break:break-all; user-select:all;"><?php echo h($FEEDBACK_WEBHOOK_URL); ?></code>
-                        <div style="margin-top:6px; font-size:12px; color:#aaa;">Команда установки webhook:</div>
-                        <code
-                            style="color:#89d185; display:block; padding:8px; background:#181818; word-break:break-all; user-select:all;">curl -X POST "https://api.telegram.org/bot<?php echo h($data['tg_token']); ?>/setWebhook" -d "url=<?php echo h($FEEDBACK_WEBHOOK_URL); ?>"</code>
-
-                        <div style="margin-top:10px; padding:10px; background:rgba(14, 165, 233, 0.06); border:1px dashed rgba(14, 165, 233, 0.6); border-radius:8px;">
-                            <div style="font-weight:700; color:#7dd3fc; margin-bottom:8px;">📦 Экспорт для модуля «Туннель»</div>
-                            <div style="font-size:12px; color:#94a3b8; line-height:1.45; margin-bottom:8px;">
-                                Скопируй строку и вставь её в модуле <b>tunnel</b> (импорт). Внутри есть <b>TG токен</b> и <b>feedback_token</b> — не отправляй это третьим лицам.
-                            </div>
-                            <textarea id="ga_tunnel_export" readonly rows="3" style="width:100%; background:#0b1220; border:1px solid rgba(148,163,184,0.25); color:#e2e8f0; border-radius:8px; padding:10px; font-family:monospace; font-size:12px; user-select:all;"><?php echo h($GA_TUNNEL_EXPORT); ?></textarea>
-                            <div style="display:flex; gap:10px; margin-top:8px; flex-wrap:wrap;">
-                                <button type="button" class="btn" style="background:#0ea5e9; color:#001018;" onclick="gaCopyTunnelExport()">Скопировать данные</button>
-                            </div>
-                        </div>
-                        <script>
-                            function gaCopyTunnelExport() {
-                                var el = document.getElementById('ga_tunnel_export');
-                                if (!el) return;
-                                var value = (el.value || '').trim();
-                                if (!value) return;
-                                if (navigator.clipboard && navigator.clipboard.writeText) {
-                                    navigator.clipboard.writeText(value).catch(function () {
-                                        el.focus();
-                                        el.select();
-                                        try { document.execCommand('copy'); } catch (e) {}
-                                    });
-                                    return;
-                                }
-                                el.focus();
-                                el.select();
-                                try { document.execCommand('copy'); } catch (e) {}
-                            }
-                        </script>
-                        <label style="display:flex; gap:8px; align-items:center; color:#f59e0b; margin-top:8px;">
-                            <input type="checkbox" name="regenerate_feedback_token" value="1" style="width:auto;margin:0;">
-                            Сгенерировать новый feedback_token при сохранении
-                        </label>
-                        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:8px; margin-top:8px;">
-                            <div>
-                                <small style="display:block;color:#aaa;">Хранить trace-записей</small>
-                                <input type="number" min="50" max="5000" name="feedback_store_max_traces"
-                                    value="<?php echo h($data['feedback_store_max_traces']); ?>">
-                            </div>
-                            <div>
-                                <small style="display:block;color:#aaa;">Лимит пользователей/trace</small>
-                                <input type="number" min="100" max="20000" name="feedback_store_max_users"
-                                    value="<?php echo h($data['feedback_store_max_users']); ?>">
-                            </div>
-                        </div>
-                    </div>
-
-                    <label>Gemini API ключ (взять на <a href="https://aistudio.google.com/app/apikey" target="_blank"
-                            style="color:#d4af37">aistudio.google.com</a>):</label>
-                    <input type="password" name="gemini_key" value="<?php echo h($data['gemini_key']); ?>"
-                        placeholder="AIzaSy...">
-
-                    <label style="margin-top:10px">Модель Gemini:</label>
-                    <select name="gemini_model" class="box-input"
-                        style="margin-bottom:15px; width: 100%; background: #1e1e1e; border: 1px solid #3e3e42; color: #fff; padding: 8px 10px; border-radius: 3px;">
-                        <optgroup label="Актуальные модели">
-                            <option value="gemini-2.5-flash" <?php echo ($data['gemini_model'] === 'gemini-2.5-flash') ? 'selected' : ''; ?>>gemini-2.5-flash (recommended)</option>
-                            <option value="gemini-2.5-flash-lite" <?php echo ($data['gemini_model'] === 'gemini-2.5-flash-lite') ? 'selected' : ''; ?>>gemini-2.5-flash-lite</option>
-                            <option value="gemini-flash-latest" <?php echo ($data['gemini_model'] === 'gemini-flash-latest') ? 'selected' : ''; ?>>gemini-flash-latest</option>
-                            <option value="gemini-3-flash-preview" <?php echo ($data['gemini_model'] === 'gemini-3-flash-preview') ? 'selected' : ''; ?>>gemini-3-flash-preview</option>
-                        </optgroup>
-                        <optgroup label="Legacy (могут быть недоступны)">
-                            <option value="gemini-2.0-flash" <?php echo ($data['gemini_model'] === 'gemini-2.0-flash') ? 'selected' : ''; ?>>gemini-2.0-flash</option>
-                            <option value="gemini-2.0-flash-001" <?php echo ($data['gemini_model'] === 'gemini-2.0-flash-001') ? 'selected' : ''; ?>>gemini-2.0-flash-001</option>
-                            <option value="gemini-1.5-pro" <?php echo ($data['gemini_model'] === 'gemini-1.5-pro') ? 'selected' : ''; ?>>gemini-1.5-pro</option>
-                            <option value="gemini-1.5-flash" <?php echo ($data['gemini_model'] === 'gemini-1.5-flash') ? 'selected' : ''; ?>>gemini-1.5-flash</option>
-                            <option value="gemini-1.5-flash-8b" <?php echo ($data['gemini_model'] === 'gemini-1.5-flash-8b') ? 'selected' : ''; ?>>gemini-1.5-flash-8b</option>
-                        </optgroup>
-                    </select>
-
-                    <a href="?module=<?php echo $MODULE_ID; ?>&action=test_ai" class="btn"
-                        style="background:#f59e0b; color:#fff; display:inline-block; margin-top:5px; padding: 5px 15px; font-size:12px; border-radius:4px; text-decoration:none;">🧪
-                        Проверить AI (Test)</a>
-                    <div style="margin-top:8px; font-size:12px; color:#fbbf24; line-height:1.45;">
-                        Если в логах видно <code>error_type=location_not_supported</code> или
-                        <code>FAILED_PRECONDITION: User location is not supported</code>, это
-                        региональное ограничение Gemini API для вашей локации/аккаунта, а не баг PHP-кода.
-                    </div>
-
-                    <hr style="margin:14px 0; border-color:#333;">
-                    <label>API версии Gemini (через запятую):</label>
-                    <input type="text" name="gemini_api_versions" value="<?php echo h($data['gemini_api_versions']); ?>"
-                        placeholder="v1beta,v1">
-
-                    <label>Fallback модели Gemini (через запятую):</label>
-                    <textarea name="gemini_fallback_models" rows="2"
-                        placeholder="gemini-2.5-flash,gemini-flash-latest,gemini-3-flash-preview"><?php echo h($data['gemini_fallback_models']); ?></textarea>
-
-                    <label style="display:flex; gap:10px; align-items:center; color:#fff; margin-top:8px;">
-                        <input type="checkbox" name="gemini_discover_models" <?php echo ($data['gemini_discover_models'] == '1') ? 'checked' : ''; ?>
-                            style="width:auto;margin:0;">
-                        Автоопределение доступных моделей через ListModels
-                    </label>
-
-                    <div style="margin-top:15px; padding:12px; background:rgba(14, 165, 233, 0.05); border:1px solid #0ea5e9; border-radius:8px;">
-                        <div style="font-weight:700; color:#0ea5e9; margin-bottom:10px;">🌍 AI Proxy Bridge (Обход локации)</div>
-                        <label style="display:flex; gap:10px; align-items:center; color:#fff; cursor:pointer;">
-                            <input type="checkbox" name="use_bridge" value="1" <?php echo ($data['use_bridge'] == '1') ? 'checked' : ''; ?> style="width:auto;margin:0;">
-                            Использовать внешний прокси-сервер
-                        </label>
-                        <div style="margin-top:10px;">
-                            <small style="display:block;color:#aaa;">URL удаленного модуля (с ?action=api_proxy)</small>
-                            <input type="text" name="bridge_url" value="<?php echo h($data['bridge_url']); ?>" placeholder="https://remote-site.com/admin.php?module=ai-bridge&action=api_proxy">
-                        </div>
-                        <div style="margin-top:8px;">
-                            <small style="display:block;color:#aaa;">Секретный ключ моста</small>
-                            <input type="text" name="bridge_secret" value="<?php echo h($data['bridge_secret']); ?>" placeholder="Секрет из настроек Bridge">
-                        </div>
-                        <div style="margin-top:8px; font-size:11px; color:var(--text-dim);">
-                            IP этого сервера: <strong style="color:#0ea5e9"><?php echo $_SERVER['SERVER_ADDR'] ?? 'не определен'; ?></strong> (укажите его в разрешенных IP на стороне Bridge).<br>
-                            Если включено, запросы будут уходить на указанный URL. API ключ на этом сайте можно будет удалить.
-                        </div>
-                    </div>
-
-                    <label>Timeout ListModels (сек):</label>
-                    <input type="number" min="5" max="90" name="gemini_discovery_timeout"
-                        value="<?php echo h($data['gemini_discovery_timeout']); ?>">
-
-                    <label style="margin-top:10px">Timeout/Connect timeout (сек):</label>
-                    <div style="display:grid;grid-template-columns:repeat(2,minmax(120px,1fr));gap:8px;">
-                        <div>
-                            <small style="display:block;color:#aaa;">Connect timeout</small>
-                            <input type="number" min="3" max="60" name="curl_connect_timeout"
-                                value="<?php echo h($data['curl_connect_timeout']); ?>">
-                        </div>
-                        <div>
-                            <small style="display:block;color:#aaa;">Gold timeout</small>
-                            <input type="number" min="5" max="120" name="gold_timeout"
-                                value="<?php echo h($data['gold_timeout']); ?>">
-                        </div>
-                        <div>
-                            <small style="display:block;color:#aaa;">AI timeout</small>
-                            <input type="number" min="5" max="180" name="ai_timeout"
-                                value="<?php echo h($data['ai_timeout']); ?>">
-                        </div>
-                        <div>
-                            <small style="display:block;color:#aaa;">Telegram timeout</small>
-                            <input type="number" min="5" max="120" name="tg_timeout"
-                                value="<?php echo h($data['tg_timeout']); ?>">
-                        </div>
-                    </div>
-                    <label style="display:flex; gap:10px; align-items:center; color:#fff; margin-top:8px;">
-                        <input type="checkbox" name="curl_ssl_verify" <?php echo ($data['curl_ssl_verify'] == '1') ? 'checked' : ''; ?>
-                            style="width:auto;margin:0;">
-                        Проверять SSL сертификаты (рекомендуется)
-                    </label>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-head">🧾 Расширенное логирование</div>
-                <div class="card-body">
-                    <label style="display:flex; gap:10px; align-items:center; color:#fff;">
-                        <input type="checkbox" name="logging_enabled" <?php echo ($data['logging_enabled'] == '1') ? 'checked' : ''; ?> style="width:auto;margin:0;">
-                        Включить журналирование
-                    </label>
-                    <label style="display:flex; gap:10px; align-items:center; color:#fff;">
-                        <input type="checkbox" name="log_success_requests" <?php echo ($data['log_success_requests'] == '1') ? 'checked' : ''; ?> style="width:auto;margin:0;">
-                        Логировать успешные события
-                    </label>
-                    <label style="display:flex; gap:10px; align-items:center; color:#fff;">
-                        <input type="checkbox" name="log_include_http_body" <?php echo ($data['log_include_http_body'] == '1') ? 'checked' : ''; ?> style="width:auto;margin:0;">
-                        Включать raw HTTP body в логи
-                    </label>
-
-                    <label>Уровень логов:</label>
-                    <select name="log_level" class="box-input"
-                        style="margin-bottom:10px; width:100%; background:#1e1e1e; border:1px solid #3e3e42; color:#fff; padding:8px 10px; border-radius:3px;">
-                        <option value="error" <?php echo ($data['log_level'] === 'error') ? 'selected' : ''; ?>>error</option>
-                        <option value="warning" <?php echo ($data['log_level'] === 'warning') ? 'selected' : ''; ?>>warning</option>
-                        <option value="info" <?php echo ($data['log_level'] === 'info') ? 'selected' : ''; ?>>info</option>
-                        <option value="debug" <?php echo ($data['log_level'] === 'debug') ? 'selected' : ''; ?>>debug</option>
-                        <option value="trace" <?php echo ($data['log_level'] === 'trace') ? 'selected' : ''; ?>>trace</option>
-                    </select>
-
-                    <label>Максимум записей в логе:</label>
-                    <input type="number" min="50" max="5000" name="log_max_entries"
-                        value="<?php echo h($data['log_max_entries']); ?>">
-
-                    <label>Лимит длины одного сообщения:</label>
-                    <input type="number" min="200" max="20000" name="log_message_limit"
-                        value="<?php echo h($data['log_message_limit']); ?>">
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-head">🧠 Алгоритм и Аналитика (Prompt LLM)</div>
-                <div class="card-body">
-                    <div class="row">
-                        <label style="display:flex; gap:10px; align-items:center; color:white; cursor:pointer;">
-                            <input type="checkbox" name="use_ai" <?php echo ($data['use_ai'] == '1') ? 'checked' : ''; ?>
-                                style="width: auto; margin: 0; transform: scale(1.4);">
-                            ПРОГНАТЬ ДАННЫЕ ЦЕНЫ ЧЕРЕЗ GEMINI
-                        </label>
-                    </div>
-
-                    <label style="margin-top:15px">Отправка в телеграм, ТОЛЬКО ЕСЛИ Важность по шкале от 0 до 100
-                        (которую придумает LLM), превысит или будет равна числу (THRESHOLD):</label>
-                    <input type="number" name="threshold" value="<?php echo h($data['threshold']); ?>"
-                        style="width: 100px;">
-
-                    <label>ИИ Профессиональный системный промпт (должен ТРЕБОВАТЬ JSON с telegram_message):</label>
-                    <textarea name="prompt" rows="8"><?php echo h($data['prompt']); ?></textarea>
-                </div>
-            </div>
-
-            <details style="background:#1e1e1e">
-                <summary style="color:#d4af37">💅 Внешний Вид Front-End Виджета XAU (на вашем сайте)</summary>
-                <div>
-                    <label>CSS Для HTML Бейджа</label>
-                    <textarea name="module_css" class="code-editor"
-                        rows="5"><?php echo h($data['module_css']); ?></textarea>
-
-                    <label>Подгрузка Доп JS скриптов (в виджет)</label>
-                    <textarea name="module_js" class="code-editor"
-                        rows="2"><?php echo h($data['module_js']); ?></textarea>
-                </div>
-            </details>
-
-            <div style="margin-top:20px;margin-bottom:30px">
-                <button class="btn btn-primary" type="submit"
-                    style="width:100%; height:45px; background:var(--accent); font-size:16px;">Сохранить Логику
-                    Модуля</button>
-            </div>
-        </form>
-    </div>
-
-    <div class="col" style="flex:1; min-width: 450px;">
-        <!-- ОКНО API SNAPSHOT -->
-        <div class="card" style="height: 100%; display: flex; flex-direction: column;">
-            <div class="card-head" style="border-left-color: #89d185;">📡 Данные последнего API запроса</div>
-            <div class="card-body" style="display:flex; gap:10px; flex-direction:column;">
-                <div style="flex:1;">
-                    <div style="font-size:10px; color:#d4af37; font-weight:bold; margin-bottom:5px;">COMMODITYPRICEAPI
-                        RESPONSE:</div>
-                    <div style="background:#000; padding:10px; border-radius:6px; overflow:auto; max-height:150px;">
-                        <pre
-                            style="margin:0; font-size:11px; color:#89d185;"><?php echo h(json_encode($data['last_raw_gold'], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)); ?></pre>
                     </div>
                 </div>
                 <div style="flex:1;">
